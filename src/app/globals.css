@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fff9f4;
+  --surface: #ffffff;
+  --foreground: #292526;
+
+  --primary: #a83e68;
+  --primary-hover: #8e3156;
+  --primary-foreground: #ffffff;
+
+  --secondary: #dce8d8;
+  --secondary-foreground: #32452f;
+
+  --accent: #f3c28e;
+  --accent-foreground: #4a3420;
+
+  --soft-pink: #f5d9e2;
+
+  --muted: #f3ece5;
+  --muted-foreground: #6d625e;
+
+  --border: #e6ddd7;
+  --input: #d8cec8;
+  --ring: #a83e68;
+
+  --success: #527653;
+  --warning: #9a6626;
+  --destructive: #b74343;
+}
+
+/* --font-fraunces/--font-manrope come from next/font (see layout.tsx,
+   applied via .variable classes on <html>) — referencing them here (rather
+   than hardcoding a font stack) is what lets next/font's generated
+   fallback-metrics/font-display:swap CSS actually take effect. --font-sans
+   feeds `body`'s font-family below plus Tailwind's `font-sans` utility
+   (nav/buttons/labels/body copy/footer/FAQ/service-card text — i.e.
+   everywhere that doesn't opt into --font-display); --font-display is a
+   new token solely for major headings (H1/H2/hero display — see
+   Heading.tsx's `font-display` class on those levels only). */
+@theme inline {
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-fraunces);
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-soft-pink: var(--soft-pink);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-destructive: var(--destructive);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Hero media crossfade (see HeroMedia.tsx). Each layered photo shares this
+   one keyframe timeline — only its animation-delay (set inline, in
+   HeroMedia's layerDelay()) differs, which is what staggers them into a
+   round-robin slideshow without JS. Percentages are OVERLAP_SECONDS/
+   CYCLE_SECONDS and (slot+OVERLAP_SECONDS)/CYCLE_SECONDS from HeroMedia.tsx
+   (11.34s cycle, 3 images, 0.9s overlap) — keep both in sync.
+   0-7.937%: fade in. 7.937-33.333%: hold, with a slow continuous zoom/pan.
+   33.333-41.270%: fade out. 41.270-100%: hidden, resetting for the next
+   loop. The fade-out window (33.333-41.270%) is deliberately identical to
+   the NEXT layer's fade-in window in real time (see layerDelay's overlap
+   term) — the two ramp concurrently, each fully visible while the other is
+   still fading, so the pair visibly cross-dissolve like a video transition
+   instead of a hard cut, and something is always fully or near-fully
+   opaque, instead of both dipping toward 0 back-to-back (which reads as a
+   washed-out/blank flash). Tuned for a 3-image gallery. A single blanket
+   ease-in-out (see `.hero-media-layer` below) — not per-segment easing —
+   is deliberate: a snappier ease-out on just the fade in/out read as an
+   abrupt cut rather than a continuous, cinematic dissolve. */
+@keyframes hero-media-cycle {
+  0% {
+    opacity: 0;
+    transform: scale(1) translateX(0);
+  }
+  7.937% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 1;
+    transform: scale(1.07) translateX(-1.2%);
+  }
+  41.270% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) translateX(0);
+  }
+}
+
+.hero-media-layer {
+  animation: hero-media-cycle 11.34s ease-in-out infinite;
+}
+
+/* The generic reduced-motion rule above only shortens this animation to
+   0.01ms — since each layer's own keyframe ends hidden (opacity 0, for the
+   round-robin handoff to the next layer), that would leave every layer
+   invisible. Disable the animation outright instead and pin the first
+   image statically, per DESIGN.md's Motion section. */
+@media (prefers-reduced-motion: reduce) {
+  .hero-media-layer {
+    animation-name: none;
+    opacity: 0;
+    transform: none;
+  }
+
+  .hero-media-layer:first-child {
+    opacity: 1;
+  }
+}
+
+/* Mobile Hero carousel crossfade (see HeroMediaCarousel.tsx). Unlike the
+   desktop hero-media-layer above, which image is on top is driven by React
+   state (index), not animation-delay — a manual swipe can jump straight to
+   a layer instead of waiting for a timed slot. This keyframe only owns the
+   continuous, slow Ken Burns zoom/pan every layer runs at all times
+   (independent of which one is currently opaque, via `alternate` so it
+   never snaps); the crossfade itself is a plain opacity transition (see
+   the `transition-opacity` + inline transitionDuration in that component).
+   Each layer's animationDelay is staggered by count so they're not all
+   zooming in lockstep, purely for a more organic feel. */
+@keyframes hero-carousel-kenburns {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  100% {
+    transform: scale(1.08) translateX(-1.5%);
+  }
+}
+
+.hero-carousel-layer {
+  animation: hero-carousel-kenburns 9s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-carousel-layer {
+    animation-name: none;
+    transform: none;
+  }
+}
+
+/* Hero content grid (see Hero.tsx). Mobile-first stack order is headline+
+   description, then the vehicle media, then the CTAs — the vehicle photos
+   sit between the pitch and the ask, per the mobile Hero requirements.
+   lg+ reassembles the same three blocks into the existing two-column
+   layout, with the media spanning both text rows in the right column. */
+.hero-grid {
+  grid-template-areas:
+    "heading"
+    "media"
+    "ctas";
+}
+
+/* Horizontal testimonials marquee (see components/ui/marquee-01-utils/
+   marquee.tsx and TestimonialsSection.tsx). Each Marquee row renders its
+   children twice, side by side; this keyframe slides that row left by
+   exactly its own width (which — since box-sizing is border-box — already
+   includes the trailing pr-4 each repeated copy carries for spacing) on a
+   linear infinite loop. Because the second copy is immediately adjacent
+   and running the identical animation, by the time the first has scrolled
+   fully off-screen the second is sitting exactly where the first started,
+   so the loop has no visible seam. Reverse direction (the second row) and
+   pause-on-hover are both applied by Marquee itself via plain CSS
+   modifiers — animation-direction and animation-play-state — no JS
+   involved in any of it. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    /* 40%/60% text/media — wide enough that the (often longer) Turkish
+       headline wraps naturally instead of breaking after nearly every
+       word, while still keeping the media column the visually larger,
+       dominant side. Replaces a too-narrow 0.72fr/1.28fr (36%/64%) split;
+       desktop-only per the Hero requirements — the mobile single-column
+       stack above is untouched by this ratio. */
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-areas:
+      "heading media"
+      "ctas media";
+  }
+}

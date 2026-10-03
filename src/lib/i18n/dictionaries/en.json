@@ -1,0 +1,401 @@
+{
+  "nav": {
+    "services": "Services",
+    "products": "Products",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "kvkk": "KVKK Notice",
+    "cookies": "Cookie Policy",
+    "requestAppointment": "Request Appointment"
+  },
+  "common": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "allRightsReserved": "All rights reserved.",
+    "primaryNavAriaLabel": "Primary",
+    "footerNavAriaLabel": "Footer",
+    "footerLegalHeading": "Legal",
+    "footerLegalAriaLabel": "Legal"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "notFound": {
+    "metaTitle": "Page Not Found",
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or may have been moved.",
+    "backToHome": "Back to Home",
+    "viewServices": "View Services"
+  },
+  "shared": {
+    "viewAllProducts": "View all products →",
+    "backToProducts": "← View all products",
+    "backToServices": "← View all services",
+    "contactUs": "Contact Us",
+    "whatsapp": "WhatsApp",
+    "whatsappFloating": {
+      "ariaLabel": "Chat with KulaPAWS on WhatsApp (opens in a new tab)",
+      "message": "Hi, I'd like to ask about KulaPAWS services."
+    },
+    "whatsappContact": {
+      "message": "Hi, I'd like to get in touch with KulaPAWS."
+    },
+    "instagramLink": {
+      "ariaLabel": "Follow KulaPAWS on Instagram (opens in a new tab)"
+    },
+    "learnMore": "Learn more →",
+    "photoComingSoonTemplate": "{name} photo coming soon",
+    "galleryPlaceholderLabel": "Photo coming soon",
+    "viewServiceDetails": "View Details",
+    "exploreServices": "Explore Our Services",
+    "howMobileGroomingWorks": "How Mobile Grooming Works",
+    "visitFaqPage": "Visit the FAQ page",
+    "overview": "Overview",
+    "whoItsFor": "Who It's For",
+    "whatToExpect": "What to Expect",
+    "serviceEyebrow": "Service",
+    "serviceCtaDescription": "Call, WhatsApp, or message us on Instagram to set up a visit.",
+    "serviceBookingCtaDescription": "Choose a time online — we'll confirm your visit with you directly.",
+    "bookServiceAriaTemplate": "Request an appointment for {name}",
+    "productCtaDescription": "Message us on WhatsApp or contact us for pricing and availability.",
+    "faqDefaultHeading": "Frequently Asked Questions",
+    "faqEmptyTitle": "FAQs are being finalized",
+    "faqEmptyDescription": "Real, confirmed answers will be added here before launch.",
+    "productsEmptyTitle": "Products are on the way",
+    "productsEmptyDescription": "Real KulaPAWS pet-care products will be listed here once confirmed.",
+    "serviceNotFoundTitle": "Service not found",
+    "serviceNotFoundDescription": "This service may have been removed, or the link is incorrect.",
+    "productNotFoundTitle": "Product not found",
+    "productNotFoundDescription": "This product may have been removed, or the link is incorrect.",
+    "servingLabel": "Serving:",
+    "heroImageLabel": "KulaPAWS mobile grooming photo coming soon",
+    "heroImageAlt": "KulaPAWS mobile grooming",
+    "mobileHighlightImageLabel": "Mobile grooming vehicle photo coming soon",
+    "mobileHighlightImageAlt": "KulaPAWS mobile grooming vehicle",
+    "aboutImageLabel": "KulaPAWS team photo coming soon",
+    "aboutImageAlt": "KulaPAWS team",
+    "contactForm": {
+      "heading": "Send us a message",
+      "unavailableTitle": "Online form coming soon",
+      "name": "Name",
+      "email": "Email",
+      "phoneOptional": "Phone (optional)",
+      "message": "Message",
+      "send": "Send Message",
+      "disclaimer": "This form isn't connected yet — submissions aren't sent."
+    },
+    "faqPage": {
+      "title": "Frequently asked questions",
+      "description": "Answers about our services, mobile grooming, and products."
+    },
+    "productsPage": {
+      "title": "Products",
+      "description": "Discover KulaPAWS products. Browse our curated picks for your pet."
+    },
+    "productFilter": {
+      "all": "All",
+      "filterLabel": "Filter by category"
+    },
+    "productDetail": {
+      "brand": "Brand"
+    },
+    "contactDetails": {
+      "heading": "Reach us directly",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "email": "Email",
+      "address": "Address",
+      "businessHours": "Business Hours",
+      "serviceAreas": "Service Areas"
+    },
+    "faqCategories": {
+      "General": "General",
+      "Dog Grooming": "Dog Grooming",
+      "Cat Grooming": "Cat Grooming",
+      "Mobile Service": "Mobile Service",
+      "Appointments": "Appointments",
+      "Products": "Products"
+    }
+  },
+  "admin": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "appointments": "Appointments",
+      "business": "Business",
+      "services": "Services",
+      "products": "Products",
+      "content": "Content",
+      "images": "Images",
+      "settings": "Settings"
+    },
+    "shell": {
+      "badge": "Admin",
+      "navAriaLabel": "Admin",
+      "logOut": "Log Out"
+    },
+    "common": {
+      "save": "Save Changes",
+      "saving": "Saving…",
+      "saved": "Saved.",
+      "reset": "Reset to Defaults",
+      "resetting": "Resetting…",
+      "cancel": "Cancel",
+      "remove": "Remove",
+      "edit": "Edit",
+      "delete": "Delete",
+      "add": "Add",
+      "heading": "Heading",
+      "description": "Description",
+      "eyebrow": "Eyebrow",
+      "title": "Title",
+      "cantUndo": "This can't be undone.",
+      "loading": "Loading…",
+      "typeToConfirmTemplate": "Type {word} to confirm",
+      "language": "Language"
+    },
+    "localization": {
+      "sourceLanguage": "Source language",
+      "sourceLanguageHint": "The language you're originally writing this in. Its text becomes the authoritative original.",
+      "editingLanguageAriaLabel": "Select language to edit",
+      "sourceBadge": "Source",
+      "missingBadge": "Missing",
+      "localDraftBadge": "Draft (local)",
+      "machineTranslatedBadge": "Machine translated",
+      "autoTranslateMissing": "Auto-translate missing languages",
+      "autoTranslating": "Translating…",
+      "autoTranslateNotConfigured": "Automatic translation isn't configured yet. Use the language tabs above to write each translation by hand.",
+      "autoTranslateNoMissing": "Every language already has a translation.",
+      "schemaUnavailableBanner": "Full sync unlocks once the localization database migration is applied. Until then, English publishes to the live site as soon as you save; Turkish and Russian are saved as drafts on this device and carry over automatically once the migration runs.",
+      "localeDisabledTooltip": "Unlocks after the localization database migration is applied.",
+      "saveTranslationFailed": "Base content saved, but this language's translation failed to save."
+    },
+    "login": {
+      "heading": "Admin Sign In",
+      "subheading": "Sign in with your admin account.",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "signIn": "Sign In",
+      "signingIn": "Signing in…",
+      "notAuthorized": "That account doesn't have admin access."
+    },
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "description": "Choose a section below to manage site content.",
+      "sections": {
+        "appointments": "Review appointment requests, update their status, and edit booking details.",
+        "business": "Contact info, service areas, hours, and social links.",
+        "services": "Create, edit, and remove the grooming services.",
+        "products": "Create, edit, and remove the pet-care products.",
+        "content": "Edit homepage, about, services, and contact page copy.",
+        "images": "Replace the logo and page images, or reset to defaults.",
+        "settings": "Reset controls for this admin panel."
+      }
+    },
+    "appointments": {
+      "title": "Appointments",
+      "description": "Review appointment requests, update their status, and adjust booking details."
+    },
+    "business": {
+      "title": "Business Information",
+      "description": "Manage the business details shown across the public site — contact info, service areas, and social links.",
+      "fields": {
+        "name": "Business Name",
+        "tagline": "Tagline",
+        "phone": "Phone",
+        "email": "Email",
+        "whatsapp": "WhatsApp",
+        "address": "Address",
+        "hours": "Business Hours",
+        "hoursPlaceholder": "e.g. Mon–Fri 9am–5pm",
+        "serviceAreas": "Service Areas",
+        "serviceAreaAriaTemplate": "Service area {n}",
+        "addServiceArea": "Add Service Area",
+        "socialLinks": "Social Links",
+        "platformPlaceholder": "Platform",
+        "urlPlaceholder": "URL",
+        "socialLinkPlatformAriaTemplate": "Social link {n} platform",
+        "socialLinkUrlAriaTemplate": "Social link {n} URL",
+        "addSocialLink": "Add Social Link"
+      },
+      "errors": {
+        "invalidEmail": "Email address looks invalid.",
+        "emailHint": "Enter a valid email address, e.g. name@example.com.",
+        "invalidSocialUrlTemplate": "The \"{name}\" social link needs a valid http(s) URL.",
+        "saveFailed": "Failed to save business information.",
+        "resetFailed": "Failed to reset business information."
+      },
+      "resetConfirm": "Reset business information to shipped defaults? This can't be undone."
+    },
+    "content": {
+      "title": "Site Content",
+      "description": "Edit the page copy shown on the homepage, about, services, contact, and FAQ pages.",
+      "tabsAriaLabel": "Content sections",
+      "tabs": {
+        "homepage": "Homepage",
+        "about": "About",
+        "services": "Services Page",
+        "contact": "Contact Page",
+        "faqs": "FAQs"
+      }
+    },
+    "homepageForm": {
+      "sections": {
+        "hero": "Hero",
+        "servicesSection": "Services Section",
+        "mobileHighlight": "Mobile Service Highlight",
+        "whyKulapaws": "Why Kulapaws",
+        "productsPreview": "Products Preview",
+        "howItWorks": "How It Works",
+        "faqPreview": "FAQ Preview",
+        "finalCta": "Final CTA"
+      },
+      "fields": {
+        "primaryCtaLabel": "Primary CTA Label",
+        "secondaryCtaLabel": "Secondary CTA Label",
+        "bullets": "Bullets",
+        "addBullet": "Add Bullet",
+        "benefitItems": "Benefit Items",
+        "addItem": "Add Item",
+        "steps": "Steps",
+        "addStep": "Add Step",
+        "titlePlaceholder": "Title",
+        "descriptionPlaceholder": "Description"
+      },
+      "resetConfirm": "Reset the homepage content to shipped defaults? This can't be undone.",
+      "saveError": "Failed to save homepage content.",
+      "resetError": "Failed to reset homepage content."
+    },
+    "aboutForm": {
+      "sections": {
+        "pageHeader": "Page Header",
+        "mobileStory": "Mobile Service Story",
+        "values": "Values",
+        "cta": "CTA"
+      },
+      "addValue": "Add Value",
+      "resetConfirm": "Reset the About page content to shipped defaults? This can't be undone.",
+      "saveError": "Failed to save About page content.",
+      "resetError": "Failed to reset About page content."
+    },
+    "servicesPageForm": {
+      "sections": {
+        "pageHeader": "Page Header",
+        "cta": "CTA"
+      },
+      "resetConfirm": "Reset the Services page content to shipped defaults? This can't be undone.",
+      "saveError": "Failed to save Services page content.",
+      "resetError": "Failed to reset Services page content."
+    },
+    "contactPageForm": {
+      "saveError": "Failed to save Contact page content.",
+      "resetConfirm": "Reset the Contact page content to shipped defaults? This can't be undone.",
+      "resetError": "Failed to reset Contact page content."
+    },
+    "faq": {
+      "addFaq": "Add FAQ",
+      "removeAllConfirm": "Remove all local FAQs? This can't be undone.",
+      "removeAll": "Remove All",
+      "removing": "Removing…",
+      "resetError": "Failed to reset FAQs.",
+      "deleteConfirmTemplate": "Delete \"{question}\"?",
+      "deleteFailed": "Failed to delete FAQ.",
+      "emptyTitle": "No FAQs yet",
+      "emptyDescription": "Add a question to get started.",
+      "form": {
+        "category": "Category",
+        "question": "Question",
+        "answer": "Answer",
+        "addFaq": "Add FAQ",
+        "validation": "Question and answer are both required.",
+        "saveFailed": "Failed to save FAQ."
+      }
+    },
+    "services": {
+      "description": "Create, edit, and remove the grooming services shown on the public site.",
+      "addService": "Add Service",
+      "resetConfirm": "Reset all services to the original 3 defaults? Local creates, edits, and deletes will be lost.",
+      "resetAll": "Reset All to Defaults",
+      "resetting": "Resetting…",
+      "resetError": "Failed to reset services.",
+      "deleteConfirmTemplate": "Delete \"{title}\"? This can't be undone unless you reset all services to defaults.",
+      "deleteFailed": "Failed to delete service.",
+      "emptyTitle": "No services",
+      "emptyDescription": "Add a service to get started.",
+      "form": {
+        "title": "Title",
+        "slug": "Slug",
+        "shortDescription": "Short Description",
+        "overview": "Overview",
+        "whoItsFor": "Who It's For",
+        "whoItsForItemAriaTemplate": "Who it's for item {n}",
+        "addItem": "Add Item",
+        "processSteps": "Process Steps",
+        "stepTitlePlaceholder": "Step title",
+        "stepDescriptionPlaceholder": "Step description",
+        "processStepTitleAriaTemplate": "Process step {n} title",
+        "processStepDescriptionAriaTemplate": "Process step {n} description",
+        "addStep": "Add Step",
+        "createService": "Create Service",
+        "slugError": "Slug must be lowercase kebab-case, e.g. nail-trimming.",
+        "saveFailed": "Failed to save service.",
+        "requiredFieldsError": "Title, short description, and overview can't be blank."
+      }
+    },
+    "products": {
+      "description": "Create, edit, and remove the pet-care products shown on the public catalog.",
+      "addProduct": "Add Product",
+      "deleteConfirmTemplate": "Delete \"{name}\"? This can't be undone.",
+      "deleteFailed": "Failed to delete product.",
+      "emptyTitle": "No products",
+      "emptyDescription": "Add a product to get started.",
+      "hiddenBadge": "Hidden",
+      "form": {
+        "name": "Name",
+        "slug": "Slug",
+        "brand": "Brand",
+        "category": "Category",
+        "shortDescription": "Short Description",
+        "fullDescription": "Full Description",
+        "price": "Price (optional)",
+        "pricePlaceholder": "e.g. ₺350",
+        "published": "Published (visible on the public site)",
+        "imageLabel": "Product Image",
+        "saveFirstHint": "Save the product first, then you'll be able to add a photo.",
+        "addProduct": "Add Product",
+        "slugError": "Slug must be lowercase kebab-case, e.g. oatmeal-shampoo.",
+        "requiredFieldsError": "Name, brand, category, and both descriptions can't be blank.",
+        "saveFailed": "Failed to save product."
+      }
+    },
+    "images": {
+      "description": "Replace the logo and page images used across the public site, or reset them to defaults.",
+      "logo": "Logo",
+      "heroImage": "Homepage Hero Image",
+      "mobileHighlightImage": "Homepage Mobile Service Image",
+      "aboutImage": "About Page Image",
+      "serviceImageTemplate": "{title} Image",
+      "beforeAfterImageTemplate": "Before/After {n} Image",
+      "resetToDefault": "Reset to Default",
+      "noImageSetTemplate": "{label} — no image set",
+      "chooseImageAriaTemplate": "Choose a new image for {label}",
+      "invalidType": "Please choose a JPEG, PNG, WebP, or GIF image.",
+      "tooLarge": "That image is too large — please choose a file under 8 MB.",
+      "saveFailed": "Failed to save this image.",
+      "resetFailed": "Failed to reset this image."
+    },
+    "settings": {
+      "title": "Settings",
+      "description": "Controls for this admin panel — not account or site-wide settings.",
+      "intro": "There are no account-level or site-wide settings yet. Business details, page content, and images are managed from their own admin sections; this page only covers a factory-reset for the data those sections write to.",
+      "resetAllTitle": "Reset All Content",
+      "resetAllDescription": "Clears every admin edit (business, homepage, about, services page, contact page, services, FAQs) and every uploaded image, restoring the site to its shipped defaults.",
+      "resetAllConfirm": "Reset ALL content (business info, homepage, about, services page, contact page, services, FAQs) and remove all uploaded images? This can't be undone.",
+      "resetAllAction": "Reset All Content",
+      "resetting": "Resetting…",
+      "done": "Done. Refresh public pages to see defaults."
+    }
+  }
+}

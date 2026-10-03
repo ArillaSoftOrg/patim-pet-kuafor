@@ -1,0 +1,401 @@
+{
+  "nav": {
+    "services": "Hizmetler",
+    "products": "Ürünler",
+    "about": "Hakkımızda",
+    "faq": "SSS",
+    "contact": "İletişim",
+    "privacy": "Gizlilik",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "cookies": "Çerez Politikası",
+    "requestAppointment": "Randevu Talep Et"
+  },
+  "common": {
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "allRightsReserved": "Tüm hakları saklıdır.",
+    "primaryNavAriaLabel": "Ana",
+    "footerNavAriaLabel": "Alt Bilgi",
+    "footerLegalHeading": "Yasal",
+    "footerLegalAriaLabel": "Yasal"
+  },
+  "language": {
+    "label": "Dil"
+  },
+  "notFound": {
+    "metaTitle": "Sayfa Bulunamadı",
+    "title": "Sayfa bulunamadı",
+    "description": "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
+    "backToHome": "Ana Sayfaya Dön",
+    "viewServices": "Hizmetleri Görüntüle"
+  },
+  "shared": {
+    "viewAllProducts": "Tüm ürünleri görüntüle →",
+    "backToProducts": "← Tüm ürünlere dön",
+    "backToServices": "← Tüm hizmetlere dön",
+    "contactUs": "Bize Ulaşın",
+    "whatsapp": "WhatsApp",
+    "whatsappFloating": {
+      "ariaLabel": "KulaPAWS ile WhatsApp'tan sohbet edin (yeni sekmede açılır)",
+      "message": "Merhaba, KulaPAWS hizmetleri hakkında bilgi almak istiyorum."
+    },
+    "whatsappContact": {
+      "message": "Merhaba, KulaPAWS ile iletişime geçmek istiyorum."
+    },
+    "instagramLink": {
+      "ariaLabel": "KulaPAWS'ı Instagram'da takip edin (yeni sekmede açılır)"
+    },
+    "learnMore": "Daha fazla bilgi →",
+    "photoComingSoonTemplate": "{name} fotoğrafı yakında",
+    "galleryPlaceholderLabel": "Fotoğraf yakında",
+    "viewServiceDetails": "Detayları Gör",
+    "exploreServices": "Hizmetlerimizi Keşfedin",
+    "howMobileGroomingWorks": "Mobil Bakım Nasıl Çalışır",
+    "visitFaqPage": "SSS Sayfasını Ziyaret Edin",
+    "overview": "Genel Bakış",
+    "whoItsFor": "Kimler İçin Uygun",
+    "whatToExpect": "Neler Bekleyebilirsiniz",
+    "serviceEyebrow": "Hizmet",
+    "serviceCtaDescription": "Randevu ayarlamak için bizi arayın, WhatsApp'tan yazın veya Instagram'dan mesaj gönderin.",
+    "serviceBookingCtaDescription": "Online olarak bir zaman seçin — ziyaretinizi sizinle doğrudan teyit edeceğiz.",
+    "bookServiceAriaTemplate": "{name} için randevu talep edin",
+    "productCtaDescription": "Fiyat ve stok bilgisi için WhatsApp'tan yazın veya bize ulaşın.",
+    "faqDefaultHeading": "Sıkça Sorulan Sorular",
+    "faqEmptyTitle": "Sıkça sorulan sorular hazırlanıyor",
+    "faqEmptyDescription": "Yayından önce gerçek ve onaylanmış yanıtlar burada paylaşılacak.",
+    "productsEmptyTitle": "Ürünler yakında burada",
+    "productsEmptyDescription": "Gerçek KulaPAWS evcil hayvan bakım ürünleri onaylandığında burada listelenecek.",
+    "serviceNotFoundTitle": "Hizmet bulunamadı",
+    "serviceNotFoundDescription": "Bu hizmet kaldırılmış olabilir veya bağlantı hatalı olabilir.",
+    "productNotFoundTitle": "Ürün bulunamadı",
+    "productNotFoundDescription": "Bu ürün kaldırılmış olabilir veya bağlantı hatalı olabilir.",
+    "servingLabel": "Hizmet verilen bölgeler:",
+    "heroImageLabel": "KulaPAWS mobil bakım fotoğrafı yakında",
+    "heroImageAlt": "KulaPAWS mobil bakım",
+    "mobileHighlightImageLabel": "Mobil bakım aracı fotoğrafı yakında",
+    "mobileHighlightImageAlt": "KulaPAWS mobil bakım aracı",
+    "aboutImageLabel": "KulaPAWS ekibi fotoğrafı yakında",
+    "aboutImageAlt": "KulaPAWS ekibi",
+    "contactForm": {
+      "heading": "Bize mesaj gönderin",
+      "unavailableTitle": "Online form yakında",
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phoneOptional": "Telefon (isteğe bağlı)",
+      "message": "Mesaj",
+      "send": "Mesaj Gönder",
+      "disclaimer": "Bu form henüz bağlı değil — gönderilen mesajlar iletilmiyor."
+    },
+    "faqPage": {
+      "title": "Sıkça sorulan sorular",
+      "description": "Hizmetlerimiz, mobil bakım ve ürünlerimiz hakkında yanıtlar."
+    },
+    "productsPage": {
+      "title": "Ürünler",
+      "description": "KulaPAWS ürünlerini keşfedin. Evcil dostunuz için seçilmiş ürünleri inceleyin."
+    },
+    "productFilter": {
+      "all": "Tümü",
+      "filterLabel": "Kategoriye göre filtrele"
+    },
+    "productDetail": {
+      "brand": "Marka"
+    },
+    "contactDetails": {
+      "heading": "Bize doğrudan ulaşın",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "email": "E-posta",
+      "address": "Adres",
+      "businessHours": "Çalışma Saatleri",
+      "serviceAreas": "Hizmet Bölgeleri"
+    },
+    "faqCategories": {
+      "General": "Genel",
+      "Dog Grooming": "Köpek Bakımı",
+      "Cat Grooming": "Kedi Bakımı",
+      "Mobile Service": "Mobil Hizmet",
+      "Appointments": "Randevular",
+      "Products": "Ürünler"
+    }
+  },
+  "admin": {
+    "nav": {
+      "dashboard": "Panel",
+      "appointments": "Randevular",
+      "business": "İşletme",
+      "services": "Hizmetler",
+      "products": "Ürünler",
+      "content": "İçerik",
+      "images": "Görseller",
+      "settings": "Ayarlar"
+    },
+    "shell": {
+      "badge": "Yönetim",
+      "navAriaLabel": "Yönetim",
+      "logOut": "Çıkış Yap"
+    },
+    "common": {
+      "save": "Değişiklikleri Kaydet",
+      "saving": "Kaydediliyor…",
+      "saved": "Kaydedildi.",
+      "reset": "Varsayılanlara Sıfırla",
+      "resetting": "Sıfırlanıyor…",
+      "cancel": "İptal",
+      "remove": "Kaldır",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "add": "Ekle",
+      "heading": "Başlık",
+      "description": "Açıklama",
+      "eyebrow": "Üst Etiket",
+      "title": "Başlık",
+      "cantUndo": "Bu işlem geri alınamaz.",
+      "loading": "Yükleniyor…",
+      "typeToConfirmTemplate": "Onaylamak için {word} yazın",
+      "language": "Dil"
+    },
+    "localization": {
+      "sourceLanguage": "Kaynak dil",
+      "sourceLanguageHint": "Bunu orijinal olarak yazdığınız dil. Bu dildeki metin, yetkili orijinal metin olur.",
+      "editingLanguageAriaLabel": "Düzenlenecek dili seçin",
+      "sourceBadge": "Kaynak",
+      "missingBadge": "Eksik",
+      "localDraftBadge": "Taslak (yerel)",
+      "machineTranslatedBadge": "Makine çevirisi",
+      "autoTranslateMissing": "Eksik dilleri otomatik çevir",
+      "autoTranslating": "Çevriliyor…",
+      "autoTranslateNotConfigured": "Otomatik çeviri henüz yapılandırılmadı. Her çeviriyi yukarıdaki dil sekmelerinden elle yazabilirsiniz.",
+      "autoTranslateNoMissing": "Her dil için zaten bir çeviri var.",
+      "schemaUnavailableBanner": "Tam senkronizasyon, yerelleştirme veritabanı geçişi uygulandığında etkinleşir. O zamana kadar İngilizce, kaydettiğiniz anda canlı sitede yayınlanır; Türkçe ve Rusça bu cihazda taslak olarak saklanır ve geçiş çalıştırıldığında otomatik olarak aktarılır.",
+      "localeDisabledTooltip": "Yerelleştirme veritabanı geçişi uygulandıktan sonra kullanılabilir.",
+      "saveTranslationFailed": "Temel içerik kaydedildi, ancak bu dilin çevirisi kaydedilemedi."
+    },
+    "login": {
+      "heading": "Yönetici Girişi",
+      "subheading": "Yönetici hesabınızla giriş yapın.",
+      "emailLabel": "E-posta",
+      "passwordLabel": "Şifre",
+      "signIn": "Giriş Yap",
+      "signingIn": "Giriş yapılıyor…",
+      "notAuthorized": "Bu hesabın yönetici erişimi yok."
+    },
+    "dashboard": {
+      "title": "Yönetim Paneli",
+      "description": "Site içeriğini yönetmek için aşağıdan bir bölüm seçin.",
+      "sections": {
+        "appointments": "Randevu taleplerini inceleyin, durumlarını güncelleyin ve randevu ayrıntılarını düzenleyin.",
+        "business": "İletişim bilgileri, hizmet bölgeleri, çalışma saatleri ve sosyal medya bağlantıları.",
+        "services": "Bakım hizmetlerini oluşturun, düzenleyin ve kaldırın.",
+        "products": "Evcil hayvan bakım ürünlerini oluşturun, düzenleyin ve kaldırın.",
+        "content": "Ana sayfa, hakkımızda, hizmetler ve iletişim sayfası metinlerini düzenleyin.",
+        "images": "Logoyu ve sayfa görsellerini değiştirin veya varsayılanlara sıfırlayın.",
+        "settings": "Bu yönetim paneli için sıfırlama kontrolleri."
+      }
+    },
+    "appointments": {
+      "title": "Randevular",
+      "description": "Randevu taleplerini inceleyin, durumlarını güncelleyin ve randevu ayrıntılarını düzenleyin."
+    },
+    "business": {
+      "title": "İşletme Bilgileri",
+      "description": "Genel sitede gösterilen işletme bilgilerini yönetin — iletişim bilgileri, hizmet bölgeleri ve sosyal medya bağlantıları.",
+      "fields": {
+        "name": "İşletme Adı",
+        "tagline": "Slogan",
+        "phone": "Telefon",
+        "email": "E-posta",
+        "whatsapp": "WhatsApp",
+        "address": "Adres",
+        "hours": "Çalışma Saatleri",
+        "hoursPlaceholder": "örn. Pzt–Cuma 09:00–17:00",
+        "serviceAreas": "Hizmet Bölgeleri",
+        "serviceAreaAriaTemplate": "Hizmet bölgesi {n}",
+        "addServiceArea": "Hizmet Bölgesi Ekle",
+        "socialLinks": "Sosyal Medya Bağlantıları",
+        "platformPlaceholder": "Platform",
+        "urlPlaceholder": "URL",
+        "socialLinkPlatformAriaTemplate": "Sosyal medya bağlantısı {n} platformu",
+        "socialLinkUrlAriaTemplate": "Sosyal medya bağlantısı {n} URL'si",
+        "addSocialLink": "Sosyal Medya Bağlantısı Ekle"
+      },
+      "errors": {
+        "invalidEmail": "E-posta adresi geçersiz görünüyor.",
+        "emailHint": "Geçerli bir e-posta adresi girin, örn. ad@ornek.com.",
+        "invalidSocialUrlTemplate": "\"{name}\" sosyal medya bağlantısı geçerli bir http(s) URL'si gerektiriyor.",
+        "saveFailed": "İşletme bilgileri kaydedilemedi.",
+        "resetFailed": "İşletme bilgileri sıfırlanamadı."
+      },
+      "resetConfirm": "İşletme bilgileri varsayılan değerlere sıfırlansın mı? Bu işlem geri alınamaz."
+    },
+    "content": {
+      "title": "Site İçeriği",
+      "description": "Ana sayfa, hakkımızda, hizmetler, iletişim ve SSS sayfalarında gösterilen metinleri düzenleyin.",
+      "tabsAriaLabel": "İçerik bölümleri",
+      "tabs": {
+        "homepage": "Ana Sayfa",
+        "about": "Hakkımızda",
+        "services": "Hizmetler Sayfası",
+        "contact": "İletişim Sayfası",
+        "faqs": "SSS"
+      }
+    },
+    "homepageForm": {
+      "sections": {
+        "hero": "Ana Görsel Alanı",
+        "servicesSection": "Hizmetler Bölümü",
+        "mobileHighlight": "Mobil Hizmet Vurgusu",
+        "whyKulapaws": "Neden Kulapaws",
+        "productsPreview": "Ürünler Önizlemesi",
+        "howItWorks": "Nasıl Çalışır",
+        "faqPreview": "SSS Önizlemesi",
+        "finalCta": "Son Çağrı (CTA)"
+      },
+      "fields": {
+        "primaryCtaLabel": "Birincil Buton Etiketi",
+        "secondaryCtaLabel": "İkincil Buton Etiketi",
+        "bullets": "Maddeler",
+        "addBullet": "Madde Ekle",
+        "benefitItems": "Avantaj Öğeleri",
+        "addItem": "Öğe Ekle",
+        "steps": "Adımlar",
+        "addStep": "Adım Ekle",
+        "titlePlaceholder": "Başlık",
+        "descriptionPlaceholder": "Açıklama"
+      },
+      "resetConfirm": "Ana sayfa içeriği varsayılan değerlere sıfırlansın mı? Bu işlem geri alınamaz.",
+      "saveError": "Ana sayfa içeriği kaydedilemedi.",
+      "resetError": "Ana sayfa içeriği sıfırlanamadı."
+    },
+    "aboutForm": {
+      "sections": {
+        "pageHeader": "Sayfa Başlığı",
+        "mobileStory": "Mobil Hizmet Hikayesi",
+        "values": "Değerler",
+        "cta": "Çağrı (CTA)"
+      },
+      "addValue": "Değer Ekle",
+      "resetConfirm": "Hakkımızda sayfası içeriği varsayılan değerlere sıfırlansın mı? Bu işlem geri alınamaz.",
+      "saveError": "Hakkımızda sayfası içeriği kaydedilemedi.",
+      "resetError": "Hakkımızda sayfası içeriği sıfırlanamadı."
+    },
+    "servicesPageForm": {
+      "sections": {
+        "pageHeader": "Sayfa Başlığı",
+        "cta": "Çağrı (CTA)"
+      },
+      "resetConfirm": "Hizmetler sayfası içeriği varsayılan değerlere sıfırlansın mı? Bu işlem geri alınamaz.",
+      "saveError": "Hizmetler sayfası içeriği kaydedilemedi.",
+      "resetError": "Hizmetler sayfası içeriği sıfırlanamadı."
+    },
+    "contactPageForm": {
+      "saveError": "İletişim sayfası içeriği kaydedilemedi.",
+      "resetConfirm": "İletişim sayfası içeriği varsayılan değerlere sıfırlansın mı? Bu işlem geri alınamaz.",
+      "resetError": "İletişim sayfası içeriği sıfırlanamadı."
+    },
+    "faq": {
+      "addFaq": "SSS Ekle",
+      "removeAllConfirm": "Tüm yerel SSS'ler kaldırılsın mı? Bu işlem geri alınamaz.",
+      "removeAll": "Tümünü Kaldır",
+      "removing": "Kaldırılıyor…",
+      "resetError": "SSS'ler sıfırlanamadı.",
+      "deleteConfirmTemplate": "\"{question}\" silinsin mi?",
+      "deleteFailed": "SSS silinemedi.",
+      "emptyTitle": "Henüz SSS yok",
+      "emptyDescription": "Başlamak için bir soru ekleyin.",
+      "form": {
+        "category": "Kategori",
+        "question": "Soru",
+        "answer": "Cevap",
+        "addFaq": "SSS Ekle",
+        "validation": "Soru ve cevap alanlarının ikisi de zorunludur.",
+        "saveFailed": "SSS kaydedilemedi."
+      }
+    },
+    "services": {
+      "description": "Genel sitede gösterilen bakım hizmetlerini oluşturun, düzenleyin ve kaldırın.",
+      "addService": "Hizmet Ekle",
+      "resetConfirm": "Tüm hizmetler orijinal 3 varsayılana sıfırlansın mı? Yerel eklemeler, düzenlemeler ve silmeler kaybolacak.",
+      "resetAll": "Tümünü Varsayılanlara Sıfırla",
+      "resetting": "Sıfırlanıyor…",
+      "resetError": "Hizmetler sıfırlanamadı.",
+      "deleteConfirmTemplate": "\"{title}\" silinsin mi? Tüm hizmetleri varsayılanlara sıfırlamadıkça bu işlem geri alınamaz.",
+      "deleteFailed": "Hizmet silinemedi.",
+      "emptyTitle": "Henüz hizmet yok",
+      "emptyDescription": "Başlamak için bir hizmet ekleyin.",
+      "form": {
+        "title": "Başlık",
+        "slug": "Slug",
+        "shortDescription": "Kısa Açıklama",
+        "overview": "Genel Bakış",
+        "whoItsFor": "Kimler İçin Uygun",
+        "whoItsForItemAriaTemplate": "Kimler için uygun öğesi {n}",
+        "addItem": "Öğe Ekle",
+        "processSteps": "Süreç Adımları",
+        "stepTitlePlaceholder": "Adım başlığı",
+        "stepDescriptionPlaceholder": "Adım açıklaması",
+        "processStepTitleAriaTemplate": "Süreç adımı {n} başlığı",
+        "processStepDescriptionAriaTemplate": "Süreç adımı {n} açıklaması",
+        "addStep": "Adım Ekle",
+        "createService": "Hizmet Oluştur",
+        "slugError": "Slug küçük harf ve tire ile yazılmalıdır, örn. tirnak-kesimi.",
+        "saveFailed": "Hizmet kaydedilemedi.",
+        "requiredFieldsError": "Başlık, kısa açıklama ve genel bakış boş bırakılamaz."
+      }
+    },
+    "products": {
+      "description": "Genel katalogda gösterilen evcil hayvan bakım ürünlerini oluşturun, düzenleyin ve kaldırın.",
+      "addProduct": "Ürün Ekle",
+      "deleteConfirmTemplate": "\"{name}\" silinsin mi? Bu işlem geri alınamaz.",
+      "deleteFailed": "Ürün silinemedi.",
+      "emptyTitle": "Henüz ürün yok",
+      "emptyDescription": "Başlamak için bir ürün ekleyin.",
+      "hiddenBadge": "Gizli",
+      "form": {
+        "name": "Ad",
+        "slug": "Slug",
+        "brand": "Marka",
+        "category": "Kategori",
+        "shortDescription": "Kısa Açıklama",
+        "fullDescription": "Tam Açıklama",
+        "price": "Fiyat (isteğe bağlı)",
+        "pricePlaceholder": "örn. ₺350",
+        "published": "Yayında (genel sitede görünür)",
+        "imageLabel": "Ürün Görseli",
+        "saveFirstHint": "Önce ürünü kaydedin, ardından bir fotoğraf ekleyebilirsiniz.",
+        "addProduct": "Ürün Ekle",
+        "slugError": "Slug küçük harf ve tire ile yazılmalıdır, örn. yulaf-sampuani.",
+        "requiredFieldsError": "Ad, marka, kategori ve her iki açıklama boş bırakılamaz.",
+        "saveFailed": "Ürün kaydedilemedi."
+      }
+    },
+    "images": {
+      "description": "Genel sitede kullanılan logoyu ve sayfa görsellerini değiştirin veya varsayılanlara sıfırlayın.",
+      "logo": "Logo",
+      "heroImage": "Ana Sayfa Kapak Görseli",
+      "mobileHighlightImage": "Ana Sayfa Mobil Hizmet Görseli",
+      "aboutImage": "Hakkımızda Sayfası Görseli",
+      "serviceImageTemplate": "{title} Görseli",
+      "beforeAfterImageTemplate": "Öncesi/Sonrası {n} Görseli",
+      "resetToDefault": "Varsayılana Sıfırla",
+      "noImageSetTemplate": "{label} — görsel ayarlanmadı",
+      "chooseImageAriaTemplate": "{label} için yeni bir görsel seçin",
+      "invalidType": "Lütfen JPEG, PNG, WebP veya GIF formatında bir görsel seçin.",
+      "tooLarge": "Bu görsel çok büyük — lütfen 8 MB'tan küçük bir dosya seçin.",
+      "saveFailed": "Bu görsel kaydedilemedi.",
+      "resetFailed": "Bu görsel sıfırlanamadı."
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "description": "Bu yönetim paneli için kontroller — hesap veya site geneli ayarlar değildir.",
+      "intro": "Henüz hesap düzeyinde veya site geneli ayarlar yok. İşletme bilgileri, sayfa içeriği ve görseller kendi yönetim bölümlerinden yönetilir; bu sayfa yalnızca bu bölümlerin yazdığı verilerin fabrika ayarlarına sıfırlanmasını kapsar.",
+      "resetAllTitle": "Tüm İçeriği Sıfırla",
+      "resetAllDescription": "Yapılan tüm yönetici düzenlemelerini (işletme, ana sayfa, hakkımızda, hizmetler sayfası, iletişim sayfası, hizmetler, SSS'ler) ve yüklenen tüm görselleri temizleyerek siteyi varsayılan haline döndürür.",
+      "resetAllConfirm": "TÜM içerik (işletme bilgileri, ana sayfa, hakkımızda, hizmetler sayfası, iletişim sayfası, hizmetler, SSS'ler) sıfırlansın ve yüklenen tüm görseller kaldırılsın mı? Bu işlem geri alınamaz.",
+      "resetAllAction": "Tüm İçeriği Sıfırla",
+      "resetting": "Sıfırlanıyor…",
+      "done": "Tamamlandı. Varsayılanları görmek için genel sayfaları yenileyin."
+    }
+  }
+}
