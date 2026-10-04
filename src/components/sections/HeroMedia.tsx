@@ -42,13 +42,23 @@ function layerDelay(index: number, count: number): string {
 // one (an admin-uploaded custom hero photo) it's simply static. See
 // .hero-media-layer in globals.css for the motion and its
 // prefers-reduced-motion override (shows the first image statically).
+//
+// aspect-[4/5] matches the real gallery photos' native portrait ratio
+// (every current /hero/*.jpg is 1440x1800 = 4:5) exactly, so object-cover
+// below is a no-op crop — the full subject (head to feet) always shows,
+// unlike the previous aspect-video (16:9) box, which kept only ~45% of a
+// 4:5 photo's height and cut off heads/paws depending on framing. Sized
+// by height (not width) so a wide lg:60%-of-container column can't
+// stretch this into an oversized vertical slab — h-[…] + aspect-ratio
+// computes width automatically, and mx-auto centers the result in the
+// grid's media column.
 export function HeroMedia({ images, alt }: HeroMediaProps) {
   const isAnimated = images.length > 1;
 
   return (
     <div
       {...(isAnimated ? { role: "img", "aria-label": alt } : {})}
-      className="relative mx-auto aspect-video w-full max-w-[560px] overflow-hidden rounded-xl border border-border/70 shadow-[0_24px_48px_-20px_#a83e6847] lg:max-w-none"
+      className="relative mx-auto aspect-[4/5] h-[420px] w-auto max-w-full overflow-hidden rounded-xl border border-border/70 shadow-[0_24px_48px_-20px_#a83e6847] xl:h-[480px]"
     >
       {images.map((src, index) => (
         <Image
