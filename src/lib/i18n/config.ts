@@ -37,5 +37,5 @@ export const LOCALE_LABELS: Record<Locale, string> = {
 // Written by both proxy.ts (first-visit detection) and the client
 // LanguageSwitcher (manual choice) — same cookie, same shared mechanism,
 // so a manual pick always wins over re-running detection on the next visit.
-export const LOCALE_COOKIE = "kulapaws_locale";
+export const LOCALE_COOKIE = "patimpet_locale";
 export const LOCALE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365; // 1 year

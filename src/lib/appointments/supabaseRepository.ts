@@ -14,7 +14,7 @@ import { createClient } from "@/lib/supabase/client";
 
 // Same-browser tabs hear about each other's writes instantly through this
 // channel; other devices through Supabase Realtime.
-const BROADCAST_CHANNEL = "kulapaws:appointments";
+const BROADCAST_CHANNEL = "patimpet:appointments";
 
 export interface SupabaseAppointmentsDependencies {
   getClient: () => SupabaseClient;

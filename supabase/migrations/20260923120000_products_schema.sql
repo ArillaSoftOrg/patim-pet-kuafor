@@ -1,4 +1,4 @@
--- Products schema for Kulapaws.
+-- Products schema for Patim Pet.
 --
 -- Adds public.products (the Supabase-backed counterpart to
 -- src/data/products.ts's Product type) so admins can manage a real product

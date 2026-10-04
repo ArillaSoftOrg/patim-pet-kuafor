@@ -4,21 +4,21 @@ import type { MetadataRoute } from "next";
 // install prompt beyond what a browser offers any site with a manifest.
 // `display: "browser"` says exactly that — a normal site, not an app-like
 // standalone experience. icons/theme colors mirror the real, existing
-// brand assets (public/brand/logo.jpg via src/app/icon.jpg) and design
+// brand assets (public/brand/logo.png via src/app/icon.jpg) and design
 // tokens (src/app/globals.css) — nothing invented.
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "KulaPAWS",
-    short_name: "KulaPAWS",
-    description: "Mobile pet grooming and pet-care products.",
+    name: "Patim Pet Kuaför",
+    short_name: "Patim Pet",
+    description: "Dog grooming salon in Çukurova, Adana.",
     start_url: "/",
     display: "browser",
-    background_color: "#fff9f4",
-    theme_color: "#a83e68",
+    background_color: "#fdf8f2",
+    theme_color: "#3c1704",
     icons: [
       {
         src: "/icon.jpg",
-        sizes: "150x150",
+        sizes: "512x512",
         type: "image/jpeg",
       },
     ],

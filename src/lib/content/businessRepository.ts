@@ -12,7 +12,7 @@ import type { BusinessRow } from "@/lib/content/businessRow";
 // (never the tab that wrote it); useLiveContent already listens for that,
 // so touching this key after a Supabase write lets an already-open public
 // tab refresh without a full reload. No business data is ever stored here.
-export const BUSINESS_SYNC_PING_KEY = "kulapaws:sync:business";
+export const BUSINESS_SYNC_PING_KEY = "patimpet:sync:business";
 
 function notifyOtherTabs() {
   localStorageAdapter.setItem(BUSINESS_SYNC_PING_KEY, String(Date.now()));

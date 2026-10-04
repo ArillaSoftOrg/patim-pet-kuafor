@@ -8,7 +8,6 @@ import { MobileNavigation } from "@/components/layout/MobileNavigation";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { primaryNav, primaryCta } from "@/data/navigation";
 import { business } from "@/data/business";
-import { LiveLogo } from "@/components/content/LiveLogo";
 import { useLocale } from "@/lib/i18n/LocaleProvider";
 import { navHref, navLabel } from "@/lib/i18n/navLabels";
 import { buildLocalizedPath } from "@/lib/i18n/pathLocale";
@@ -34,21 +33,22 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border bg-surface pt-[env(safe-area-inset-top)] lg:static">
       <Container className="flex h-16 items-center justify-between sm:h-20">
         <Link href={buildLocalizedPath(locale, "/")} className="inline-flex items-center gap-2">
-          <LiveLogo defaultBusiness={business} size={48} />
-          {/* Real van-signage wordmark (see public/brand/wordmark-clean.png)
-              — the logo's alt text already gives this Link its accessible
-              name, so this second image is decorative. Intrinsic width/height
-              match the source file's natural aspect ratio; h-full + w-auto
-              scale it to the wrapper's fixed height without ever stretching
-              it. */}
-          <span className="flex h-[24px] flex-shrink-0 items-center sm:h-[32px]">
+          {/* Real Patim Pet Kuaför wordmark (public/brand/wordmark.png) — a
+              single combined icon+text lockup, unlike KulaPAWS's separate
+              icon-only logo + text wordmark, so there's no second circular
+              badge image here (that would just repeat this same lockup at
+              a smaller, less legible size). This Image carries the Link's
+              accessible name since it's the only logo element. Intrinsic
+              width/height match the source file's natural aspect ratio;
+              h-full + w-auto scale it to the wrapper's fixed height without
+              ever stretching it. */}
+          <span className="flex h-[32px] flex-shrink-0 items-center sm:h-[40px]">
             <Image
-              src="/brand/wordmark-clean.png"
-              alt=""
-              aria-hidden="true"
-              width={1000}
-              height={310}
-              sizes="150px"
+              src="/brand/wordmark.png"
+              alt={business.name}
+              width={2048}
+              height={683}
+              sizes="220px"
               className="h-full w-auto object-contain"
               preload
             />

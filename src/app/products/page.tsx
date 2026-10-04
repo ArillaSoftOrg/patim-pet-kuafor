@@ -6,7 +6,7 @@ import { getProductsServer } from "@/lib/content/getProductsServer";
 // per the manual-flip note this replaces.
 export const metadata: Metadata = {
   title: "Products",
-  description: "Discover KulaPAWS products — a curated selection for your pet.",
+  description: "Discover Patim Pet Kuaför products — a curated selection for your dog.",
   alternates: { canonical: "/products" },
 };
 

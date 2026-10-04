@@ -11,7 +11,7 @@ export type PageContentKey = "homepage" | "about" | "servicesPage" | "contactPag
 // as businessRepository/servicesRepository's ping keys. See useLiveContent
 // for how this is used.
 export function pageContentSyncKey(key: PageContentKey): string {
-  return `kulapaws:sync:page_content:${key}`;
+  return `patimpet:sync:page_content:${key}`;
 }
 
 function notifyOtherTabs(key: PageContentKey) {

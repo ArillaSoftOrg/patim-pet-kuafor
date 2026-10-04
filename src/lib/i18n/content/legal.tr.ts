@@ -1,6 +1,6 @@
 import type { LegalCopy } from "@/data/legal";
 
-// The authoritative Turkish text of KulaPAWS's legal pages (KVKK
+// The authoritative Turkish text of Patim Pet Kuaför's legal pages (KVKK
 // Aydınlatma Metni, Gizlilik Politikası, Çerez Politikası). Written first
 // and in full — legal.ts (English) and legal.ru.ts (Russian) are faithful
 // informational translations of this document, not independent sources;
@@ -34,7 +34,7 @@ export const legalCopyTr: LegalCopy = {
     updated: LAST_UPDATED,
     showIdentity: true,
     intro:
-      "Bu Aydınlatma Metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (\"Kanun\") 10. maddesi uyarınca, KulaPAWS web sitesi üzerinden randevu talebinde bulunan ilgili kişilerin kişisel verilerinin veri sorumlusu sıfatıyla KulaPAWS tarafından işlenmesi hakkında bilgilendirilmesi amacıyla hazırlanmıştır.",
+      "Bu Aydınlatma Metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (\"Kanun\") 10. maddesi uyarınca, Patim Pet Kuaför web sitesi üzerinden randevu talebinde bulunan ilgili kişilerin kişisel verilerinin veri sorumlusu sıfatıyla Patim Pet Kuaför tarafından işlenmesi hakkında bilgilendirilmesi amacıyla hazırlanmıştır.",
     sections: [
       {
         id: "islenen-veriler",
@@ -48,7 +48,7 @@ export const legalCopyTr: LegalCopy = {
             type: "list",
             items: [
               "Kimlik ve iletişim bilgileri: ad soyad, telefon numarası ve (paylaşmanız hâlinde) e-posta adresi.",
-              "Konum bilgisi: hizmetin verileceği hizmet bölgesi, açık adres ve adrese ilişkin ek bilgiler (bina, kat, daire vb.).",
+              "Konum bilgisi: hizmet bölgesi ve randevu için paylaştığınız açık adres veya iletişim bilgileri.",
               "Randevu ve işlem bilgisi: seçilen hizmet, tarih ve saat, fiyat bilgisi ve randevuya ilişkin eklediğiniz notlar.",
               "Evcil hayvana ilişkin bilgiler: adı, türü, cinsi, büyüklüğü ve bakıma ilişkin notlar. Bu bilgiler tek başına herhangi bir gerçek kişiyi belirli veya belirlenebilir kılmadığından 6698 sayılı Kanun kapsamında \"kişisel veri\" niteliği taşımaz; şeffaflık amacıyla burada belirtilmektedir.",
             ],
@@ -65,11 +65,11 @@ export const legalCopyTr: LegalCopy = {
         blocks: [
           {
             type: "p",
-            text: "Toplanan kişisel verileriniz; randevu talebinizin değerlendirilmesi, planlanması ve sizinle teyit edilmesi, mobil bakım hizmetinin ifa edilmesi, hizmetin ifası kapsamında sizinle iletişime geçilmesi, aynı zaman aralığı için mükerrer randevu oluşmasının ve randevu sisteminin kötüye kullanılmasının (örneğin aynı telefon numarasından kısa süre içinde olağan dışı sayıda talep gelmesi) önlenmesi ile yürürlükteki mevzuattan kaynaklanan kayıt tutma yükümlülüklerinin yerine getirilmesi amaçlarıyla işlenir.",
+            text: "Toplanan kişisel verileriniz; randevu talebinizin değerlendirilmesi, planlanması ve sizinle teyit edilmesi, bakım hizmetinin ifa edilmesi, hizmetin ifası kapsamında sizinle iletişime geçilmesi, aynı zaman aralığı için mükerrer randevu oluşmasının ve randevu sisteminin kötüye kullanılmasının (örneğin aynı telefon numarasından kısa süre içinde olağan dışı sayıda talep gelmesi) önlenmesi ile yürürlükteki mevzuattan kaynaklanan kayıt tutma yükümlülüklerinin yerine getirilmesi amaçlarıyla işlenir.",
           },
           {
             type: "p",
-            text: "Kişisel verileriniz pazarlama, profilleme veya reklam amacıyla işlenmemektedir. Bu amaçlarla herhangi bir işleme faaliyeti yürütülmediğinden, randevu formu üzerinden bu yönde ayrıca bir onay talep edilmemektedir. KulaPAWS ileride kampanya, indirim veya tanıtım amaçlı ticari elektronik ileti göndermeye başlarsa, bu yalnızca randevu sürecinden tamamen ayrı, isteğe bağlı ve önceden işaretlenmemiş bir seçenekle açıkça verilmiş bir onaya dayanacak; bu onay hiçbir şekilde randevu talebinde bulunmak için şart olmayacak ve dilediğiniz zaman geri çekilebilecektir.",
+            text: "Kişisel verileriniz pazarlama, profilleme veya reklam amacıyla işlenmemektedir. Bu amaçlarla herhangi bir işleme faaliyeti yürütülmediğinden, randevu formu üzerinden bu yönde ayrıca bir onay talep edilmemektedir. Patim Pet Kuaför ileride kampanya, indirim veya tanıtım amaçlı ticari elektronik ileti göndermeye başlarsa, bu yalnızca randevu sürecinden tamamen ayrı, isteğe bağlı ve önceden işaretlenmemiş bir seçenekle açıkça verilmiş bir onaya dayanacak; bu onay hiçbir şekilde randevu talebinde bulunmak için şart olmayacak ve dilediğiniz zaman geri çekilebilecektir.",
           },
         ],
       },
@@ -107,7 +107,7 @@ export const legalCopyTr: LegalCopy = {
             type: "list",
             items: [
               "Web sitesinin teknik altyapısını (veritabanı, kimlik doğrulama ve dosya depolama) sağlayan hizmet sağlayıcı — hâlihazırda Supabase — veri işleyen sıfatıyla; web sitesinin barındırma/altyapı sağlayıcısına ilişkin bilgi Gizlilik Politikası'nın \"Altyapı ve Güvenlik\" bölümünde belirtilmektedir.",
-              "Randevu sonrası sizinle iletişime geçmek amacıyla, yalnızca sizin tercihiniz ve girişiminizle kullanılan WhatsApp uygulaması üzerinden gönderdiğiniz mesajlar; bu mesajlar WhatsApp LLC/Meta tarafından kendi gizlilik şart ve politikaları çerçevesinde işlenir ve KulaPAWS'ın kontrolü dışındadır.",
+              "Randevu sonrası sizinle iletişime geçmek amacıyla, yalnızca sizin tercihiniz ve girişiminizle kullanılan WhatsApp uygulaması üzerinden gönderdiğiniz mesajlar; bu mesajlar WhatsApp LLC/Meta tarafından kendi gizlilik şart ve politikaları çerçevesinde işlenir ve Patim Pet Kuaför'ün kontrolü dışındadır.",
               "Yetkili kamu kurum ve kuruluşları, yalnızca yasal bir talep veya yükümlülüğün bulunması hâlinde.",
             ],
           },
@@ -154,7 +154,7 @@ export const legalCopyTr: LegalCopy = {
         blocks: [
           {
             type: "p",
-            text: "Yukarıdaki haklarınızı kullanmak için, kimliğinizi tevsik edici bilgi ve belgelerle birlikte talebinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'de belirtilen yöntemlerle KulaPAWS'a iletebilirsiniz. Güncel başvuru iletişim bilgisi yukarıdaki \"Veri Sorumlusu\" bölümünde yer almaktadır. Talebiniz, niteliğine göre en kısa sürede ve en geç otuz gün içinde ücretsiz olarak sonuçlandırılır.",
+            text: "Yukarıdaki haklarınızı kullanmak için, kimliğinizi tevsik edici bilgi ve belgelerle birlikte talebinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'de belirtilen yöntemlerle Patim Pet Kuaför'e iletebilirsiniz. Güncel başvuru iletişim bilgisi yukarıdaki \"Veri Sorumlusu\" bölümünde yer almaktadır. Talebiniz, niteliğine göre en kısa sürede ve en geç otuz gün içinde ücretsiz olarak sonuçlandırılır.",
           },
         ],
       },
@@ -165,7 +165,7 @@ export const legalCopyTr: LegalCopy = {
     updated: LAST_UPDATED,
     showIdentity: true,
     intro:
-      "Bu Gizlilik Politikası, KulaPAWS web sitesinin işleyişi sırasında hangi bilgilerin toplandığını, bu bilgilerin nasıl kullanıldığını ve korunduğunu ve hangi dış hizmetlerin devrede olduğunu açıklar. Kişisel verilerin işlenmesine ilişkin resmi yasal bilgilendirme için KVKK Aydınlatma Metni'ne bakınız.",
+      "Bu Gizlilik Politikası, Patim Pet Kuaför web sitesinin işleyişi sırasında hangi bilgilerin toplandığını, bu bilgilerin nasıl kullanıldığını ve korunduğunu ve hangi dış hizmetlerin devrede olduğunu açıklar. Kişisel verilerin işlenmesine ilişkin resmi yasal bilgilendirme için KVKK Aydınlatma Metni'ne bakınız.",
     sections: [
       {
         id: "kapsam",
@@ -173,7 +173,7 @@ export const legalCopyTr: LegalCopy = {
         blocks: [
           {
             type: "p",
-            text: "Bu politika, genel KulaPAWS web sitesini ve randevu talep akışını kapsar. Yönetim panelinin yetkili personel tarafından dahili kullanımı, bu kapsamın dışındadır ve personelin işletmeyle olan çalışma ilişkisi çerçevesinde ayrıca düzenlenir.",
+            text: "Bu politika, genel Patim Pet Kuaför web sitesini ve randevu talep akışını kapsar. Yönetim panelinin yetkili personel tarafından dahili kullanımı, bu kapsamın dışındadır ve personelin işletmeyle olan çalışma ilişkisi çerçevesinde ayrıca düzenlenir.",
           },
         ],
       },
@@ -207,11 +207,11 @@ export const legalCopyTr: LegalCopy = {
         blocks: [
           {
             type: "p",
-            text: "KulaPAWS'tan alacağınız iletişimler iki ayrı kategoridedir. Randevu talebinizin alındığına, onaylandığına, yaklaştığına, yeniden planlandığına veya iptal edildiğine ilişkin bildirimler hizmet iletişimidir; bunlar randevunuzun bir parçasıdır ve hiçbir zaman pazarlama onayı gerektirmez. Kampanya, indirim veya tanıtım içerikli pazarlama iletişimleri ise tamamen ayrı bir kategoridir ve yalnızca ayrıca, isteğe bağlı olarak ve açıkça verdiğiniz bir onaya dayanarak gönderilir; bu onay hiçbir şekilde randevu almak için şart değildir.",
+            text: "Patim Pet Kuaför'den alacağınız iletişimler iki ayrı kategoridedir. Randevu talebinizin alındığına, onaylandığına, yaklaştığına, yeniden planlandığına veya iptal edildiğine ilişkin bildirimler hizmet iletişimidir; bunlar randevunuzun bir parçasıdır ve hiçbir zaman pazarlama onayı gerektirmez. Kampanya, indirim veya tanıtım içerikli pazarlama iletişimleri ise tamamen ayrı bir kategoridir ve yalnızca ayrıca, isteğe bağlı olarak ve açıkça verdiğiniz bir onaya dayanarak gönderilir; bu onay hiçbir şekilde randevu almak için şart değildir.",
           },
           {
             type: "p",
-            text: "Bu sayfanın yayımlandığı tarih itibarıyla KulaPAWS herhangi bir pazarlama iletisi göndermemekte ve pazarlama onayı toplamamaktadır. Bu özellik ileride etkinleştirilirse, onay randevu sürecinden tamamen bağımsız olarak, önceden işaretlenmemiş bir seçenekle istenecek ve dilediğiniz zaman geri çekilebilecektir.",
+            text: "Bu sayfanın yayımlandığı tarih itibarıyla Patim Pet Kuaför herhangi bir pazarlama iletisi göndermemekte ve pazarlama onayı toplamamaktadır. Bu özellik ileride etkinleştirilirse, onay randevu sürecinden tamamen bağımsız olarak, önceden işaretlenmemiş bir seçenekle istenecek ve dilediğiniz zaman geri çekilebilecektir.",
           },
         ],
       },
@@ -244,7 +244,7 @@ export const legalCopyTr: LegalCopy = {
             items: [
               "Supabase — veritabanı, kimlik doğrulama ve dosya depolama altyapısı (veri işleyen).",
               "WhatsApp — yalnızca önceden doldurulmuş WhatsApp bağlantısını açmayı tercih etmeniz hâlinde kullanılır; WhatsApp'ın kendi şartlarına tabidir.",
-              "Instagram — KulaPAWS'ın herkese açık profiline verilen bir sosyal medya bağlantısıdır; ziyaret edilmesi Instagram'ın kendi şartlarına tabidir.",
+              "Instagram — Patim Pet Kuaför'ün herkese açık profiline verilen bir sosyal medya bağlantısıdır; ziyaret edilmesi Instagram'ın kendi şartlarına tabidir.",
             ],
           },
           {
@@ -290,7 +290,7 @@ export const legalCopyTr: LegalCopy = {
     updated: LAST_UPDATED,
     showIdentity: false,
     intro:
-      "Bu Çerez Politikası, KulaPAWS web sitesinin hangi çerezleri ve benzer tarayıcı depolama teknolojilerini (localStorage) hangi amaçla kullandığını açıklar.",
+      "Bu Çerez Politikası, Patim Pet Kuaför web sitesinin hangi çerezleri ve benzer tarayıcı depolama teknolojilerini (localStorage) hangi amaçla kullandığını açıklar.",
     sections: [
       {
         id: "kullandigimiz-cerezler",
@@ -299,7 +299,7 @@ export const legalCopyTr: LegalCopy = {
           {
             type: "list",
             items: [
-              "kulapaws_locale — kesinlikle gerekli/işlevsel çerez. Seçtiğiniz görüntüleme dilini (Türkçe/İngilizce/Rusça) hatırlar. KulaPAWS tarafından ayarlanır. Süre: 1 yıl.",
+              "patimpet_locale — kesinlikle gerekli/işlevsel çerez. Seçtiğiniz görüntüleme dilini (Türkçe/İngilizce/Rusça) hatırlar. Patim Pet Kuaför tarafından ayarlanır. Süre: 1 yıl.",
               "Supabase oturum çerezleri (sb-*) — kesinlikle gerekli çerez. Yalnızca yetkili bir personel /admin yönetim paneline giriş yaptığında oluşturulur. Sıradan ziyaretçilerin tarayıcısında bu çerez bulunmaz.",
               "localStorage (tarayıcı yerel deposu) — kesinlikle gerekli/işlevsel. Hizmetler, ürünler, SSS ve işletme iletişim bilgileri gibi herkese açık ve kişisel olmayan içeriklerin hızlı ve kesintisiz gösterimi için önbelleğe alınır. Ziyaretçiyi tanımlamaz veya izlemez.",
             ],

@@ -1,7 +1,6 @@
 import type { Benefit } from "@/components/sections/BenefitsGrid";
 import type { ProcessStep } from "@/components/sections/ProcessSteps";
 import type { MobileSalonGalleryItem } from "@/components/sections/MobileSalonShowcase";
-import type { BeforeAfterGalleryItem } from "@/components/sections/BeforeAfterShowcase";
 import type { ServiceShowcaseItem } from "@/components/sections/ServiceShowcase";
 import type { Testimonial } from "@/components/sections/TestimonialsSection";
 
@@ -24,14 +23,19 @@ export interface HomepageContent {
     description: string;
     gallery: MobileSalonGalleryItem[];
   };
+  // A genuine two-image drag-to-reveal comparison (see BeforeAfterSlider.tsx)
+  // — not the old pre-composited-graphic carousel (BeforeAfterShowcase.tsx).
+  // Only one verified real pair exists today (see before/after sourcing
+  // notes below); this shape holds exactly one pair rather than a gallery,
+  // since fabricating additional unverified pairs is explicitly out.
   beforeAfter: {
     eyebrow: string;
     heading: string;
     description: string;
-    prevLabel: string;
-    nextLabel: string;
-    goToSlideLabel: string;
-    gallery: BeforeAfterGalleryItem[];
+    beforeLabel: string;
+    afterLabel: string;
+    before: { src: string; alt: string };
+    after: { src: string; alt: string };
   };
   servicesSection: {
     eyebrow: string;
@@ -40,9 +44,9 @@ export interface HomepageContent {
     // Curated scroll-driven showcase content (see ServiceShowcase.tsx) —
     // always fixed /public image paths and a hand-picked slug where a real
     // /services/[slug] page exists, same "not managed Supabase image refs"
-    // pattern as hero.gallery/mobileSalon.gallery/beforeAfter.gallery above,
-    // so it isn't exposed in the admin content form. This is a distinct,
-    // richer presentation from the plain services list on /services (still
+    // pattern as hero.gallery/mobileSalon.gallery above, so it isn't
+    // exposed in the admin content form. This is a distinct, richer
+    // presentation from the plain services list on /services (still
     // powered live by servicesRepository) — see HomeContent.tsx.
     showcase: ServiceShowcaseItem[];
   };
@@ -78,8 +82,6 @@ export interface HomepageContent {
     eyebrow: string;
     heading: string;
     description: string;
-    // TEMPORARY DEMO TESTIMONIALS — REPLACE WITH VERIFIED GOOGLE/INSTAGRAM
-    // REVIEWS. See the `items` assignment below for the full note.
     items: Testimonial[];
   };
   faqPreview: {
@@ -91,282 +93,199 @@ export interface HomepageContent {
   };
 }
 
-// Provisional, generic copy (README.md §7 flags real homepage content —
-// tagline, hero headline, process steps, etc. — as not yet collected).
-// Centralized here so replacing it with confirmed content is a data edit,
-// not a page-component edit.
+// Real business facts and real review text only — see src/data/business.ts
+// and the project's source material (Google Business Profile, Instagram
+// @patimpetkuafor) for what's confirmed. Patim Pet Kuaför is a storefront
+// salon in Çukurova, Adana — not a mobile/van service — and offers dog
+// grooming only (no cat grooming is listed anywhere in the source
+// material), so no copy here claims either.
+//
+// Photos below are curated from the full @patimpetkuafor Instagram archive
+// (gallery-dl export, 110 real photos reviewed) — not the small initial
+// hand-picked set. Four other Instagram accounts were present in the same
+// export (patimpetmarket, poodle_eysan, turkishpupy, zeusunatasi) but none
+// has a confirmed ownership link to this business (patimpetmarket has zero
+// photos; the other three are 2-4 file incidental pulls, not this
+// account's own content) — none of their files are used anywhere.
 export const homepage: HomepageContent = {
   hero: {
-    heading: "Mobile pet grooming that comes to you",
+    heading: "Dog grooming, done right",
     description:
-      "KulaPAWS brings mobile dog and cat grooming to your door across the Antalya area — so your pet stays calm and comfortable at home.",
+      "Patim Pet Kuaför is a dog grooming salon in Çukurova, Adana — breed-specific trims, model cuts, and full-service care from an internationally certified groomer.",
     image: null,
-    gallery: ["/hero/hero-van-side.jpg", "/hero/hero-van-front.jpg", "/hero/hero-van-rear.jpg"],
+    gallery: ["/hero/bichon-pink-ears.jpg", "/hero/chow-chow-playful.jpg", "/hero/akita-salon.jpg"],
     primaryCtaLabel: "Request Appointment",
     secondaryCtaLabel: "Explore Services",
   },
   mobileSalon: {
-    eyebrow: "Meet The Van",
-    heading: "Meet Our Mobile Salon",
-    description:
-      "A real look inside the van that brings grooming to your door — the tools, the setup, and the team behind every appointment.",
+    eyebrow: "Our Salon",
+    heading: "Inside Patim Pet Kuaför",
+    description: "A real look at our salon in Çukurova, Adana — the space and the team behind every appointment.",
     gallery: [
       {
-        id: "van-exterior-front",
-        alt: "KulaPAWS mobile grooming van parked outside",
-        caption: "Our fully-equipped grooming van",
+        id: "exterior",
+        alt: "Patim Pet Kuaför storefront in Çukurova, Adana",
+        caption: "Our salon in Çukurova, Adana",
       },
       {
-        id: "van-exterior-side",
-        alt: "Side view of the KulaPAWS mobile pet salon van",
-        caption: "Kitted out for dogs and cats",
+        id: "team-faik",
+        alt: "Faik Kopuz, owner and groomer at Patim Pet Kuaför, with a freshly groomed Pomeranian",
+        caption: "Faik Kopuz, our certified groomer",
       },
       {
-        id: "mobile-groom-dog",
-        alt: "A freshly groomed dog held up inside the van",
-        caption: "Grooming, right where your pet feels safe",
+        id: "team-groomer",
+        alt: "A Patim Pet Kuaför groomer working on a Yorkshire Terrier",
+        caption: "Our grooming team at work",
       },
       {
-        id: "mobile-groom-pomeranian",
-        alt: "A Pomeranian being dried after its bath in the van",
-        caption: "Bath and blow-dry, on board",
-      },
-      {
-        id: "pomeranian-after-groom",
-        alt: "A fluffy Pomeranian after grooming",
-        caption: "Fluffed, trimmed, and happy",
-      },
-      {
-        id: "groomers-at-work",
-        alt: "KulaPAWS groomers working together inside the van",
-        caption: "Our groomers at work",
-      },
-      {
-        id: "cat-after-groom",
-        alt: "A groomed cat held up after its session",
-        caption: "Cats get the same gentle care",
-      },
-      {
-        id: "cat-clipper-groom",
-        alt: "A Scottish Fold cat being clipped on the grooming table inside the van",
-        caption: "Careful, hands-on trimming for cats too",
+        id: "faik-grooming-action",
+        alt: "Faik Kopuz trimming a dog's coat at the grooming table",
+        caption: "Hands-on, careful grooming",
       },
     ],
   },
+  // Source: the SAME Instagram carousel post (3580036553405216578) — two
+  // photos of the same curly-coated dog against the same marble-tile
+  // backdrop, matching face/markings in both frames. Strongest possible
+  // evidence tier (same post), not a cross-post breed/color match like the
+  // pairing this replaced.
   beforeAfter: {
     eyebrow: "Real Results",
     heading: "Before & After",
-    description: "A real look at the transformation from some of our mobile grooming sessions.",
-    prevLabel: "Previous photo",
-    nextLabel: "Next photo",
-    goToSlideLabel: "Go to photo",
-    gallery: [
-      {
-        id: "before-after-01",
-        alt: "Before and after grooming photos of a fluffy dog, showing a full coat wash and trim",
-        width: 1086,
-        height: 1448,
-      },
-      {
-        id: "before-after-02",
-        alt: "Before and after grooming photos of a curly-coated dog, showing a tidy, shaped trim",
-        width: 1254,
-        height: 1254,
-      },
-      {
-        id: "before-after-03",
-        alt: "Before and after grooming photos of a small white dog, showing a clean, shaped coat",
-        width: 1144,
-        height: 1375,
-      },
-      {
-        id: "before-after-04",
-        alt: "Before and after grooming photos of a small dog, showing a neat face and coat trim",
-        width: 1254,
-        height: 1254,
-      },
-      {
-        id: "before-after-05",
-        alt: "Before and after grooming photos of a curly-coated puppy, showing a full wash, trim, and a bandana finish",
-        width: 1345,
-        height: 1170,
-      },
-      {
-        id: "before-after-06",
-        alt: "Before and after grooming photos of an apricot curly-coated dog, showing a neat, rounded trim",
-        width: 1345,
-        height: 1170,
-      },
-      {
-        id: "before-after-07",
-        alt: "Before and after grooming photos of a Golden Retriever, showing a full wash and blow-dry",
-        width: 1345,
-        height: 1170,
-      },
-      {
-        id: "before-after-08",
-        alt: "Before and after grooming photos of a grey British Shorthair cat, showing a neat coat trim",
-        width: 1345,
-        height: 1170,
-      },
-    ],
+    description: "Drag the slider to see a real grooming transformation at our salon.",
+    beforeLabel: "Before",
+    afterLabel: "After",
+    before: {
+      src: "/before-after/labradoodle-before.jpg",
+      alt: "A curly-coated dog with a long, unstyled coat before a grooming appointment at Patim Pet Kuaför",
+    },
+    after: {
+      src: "/before-after/labradoodle-after.jpg",
+      alt: "The same dog with a neatly trimmed teddy-bear cut after grooming at Patim Pet Kuaför",
+    },
   },
   servicesSection: {
     eyebrow: "What We Offer",
     heading: "Our Services",
-    description: "Grooming care built around your pet, wherever home is.",
+    description: "Dog grooming at our salon in Çukurova, Adana.",
     showcase: [
       {
         number: "01",
-        title: "Wash & Basic Care",
-        description: "Nail trimming, ear cleaning, brushing, and essential upkeep.",
-        bullets: ["Gentle shampoo wash", "Nail trim and ear cleaning", "Brushing and de-matting"],
-        image: "/services/wash-basic-care.jpg",
-        imageAlt: "A Pomeranian being dried after its bath in the KulaPAWS van",
-        slug: "wash-basic-care",
+        title: "Dog Bath & Blow-Dry",
+        description: "A thorough shampoo wash and blow-dry at our salon.",
+        bullets: ["Gentle shampoo wash", "Careful blow-dry", "Any breed or coat type"],
+        image: "/grooming/spaniel-result.jpg",
+        imageAlt: "A freshly bathed and blow-dried spaniel-type dog at Patim Pet Kuaför",
+        slug: "dog-bath-blow-dry",
       },
       {
         number: "02",
-        title: "Wash + Trim Care",
-        description: "A wash, a coat-appropriate trim, brushing, and finishing touches.",
-        bullets: ["Wash and blow-dry", "Breed-appropriate or custom trim", "Brushing and finishing touches"],
-        image: "/services/wash-trim-care.jpg",
-        imageAlt: "A freshly trimmed and groomed Pomeranian",
-        slug: "wash-trim-care",
-      },
-      {
-        number: "03",
-        title: "Dog Grooming",
-        description: "Grooming tailored to your dog's breed, coat, and needs.",
-        bullets: ["Tailored to breed and coat type", "Calm, familiar home setting", "Routine nail and ear care"],
-        image: "/services/dog-grooming-card.jpg",
-        imageAlt: "A puppy being groomed inside the KulaPAWS van",
+        title: "Dog Grooming & Care",
+        description: "Breed-specific trims and model cuts, by an internationally certified groomer.",
+        bullets: ["Breed-specific or model cut", "Internationally certified groomer", "Full bath, trim, and style"],
+        image: "/grooming/toy-poodle-grey-result.jpg",
+        imageAlt: "A freshly groomed grey Toy Poodle after a full trim at Patim Pet Kuaför",
         slug: "dog-grooming",
       },
       {
+        number: "03",
+        title: "Nail Trimming",
+        description: "Careful nail trimming for dogs.",
+        bullets: ["Quick, careful trim", "Standalone or with a groom", "Any breed"],
+        image: "/grooming/shiba-mix-result.jpg",
+        imageAlt: "A groomed Shiba/Husky-mix dog at Patim Pet Kuaför",
+        slug: "nail-trimming",
+      },
+      {
         number: "04",
-        title: "Cat Grooming",
-        description: "A calmer, more controlled, and attentive approach for cats.",
-        bullets: ["Calm, low-stress approach", "No carrier or car ride", "Brushing and essential care"],
-        image: "/services/cat-grooming-card.jpg",
-        imageAlt: "A cat being groomed inside the KulaPAWS van",
-        slug: "cat-grooming",
+        title: "Ear Cleaning",
+        description: "A dedicated ear cleaning service for dogs.",
+        bullets: ["Gentle, careful clean", "Routine ear hygiene", "Any breed"],
+        image: "/grooming/pomeranian-mohawk-result.jpg",
+        imageAlt: "A groomed Pomeranian with a styled accent at Patim Pet Kuaför",
+        slug: "ear-cleaning",
       },
       {
         number: "05",
-        title: "Mobile Pet Grooming",
-        description: "The KulaPAWS grooming van brings the service directly to you.",
-        bullets: ["The grooming van comes to your door", "No waiting room or transport", "One-on-one attention start to finish"],
-        image: "/hero/hero-van-front.jpg",
-        imageAlt: "The KulaPAWS mobile grooming van",
-        slug: "mobile-pet-grooming",
+        title: "Full Grooming Package",
+        description: "Our complete, comprehensive dog care service, in one visit.",
+        bullets: ["Wash, trim, nails, and ears", "All in a single visit", "Our most complete service"],
+        image: "/grooming/chow-chow-portrait.jpg",
+        imageAlt: "A freshly groomed Chow Chow with a full teddy-bear cut at Patim Pet Kuaför",
+        slug: "full-grooming-package",
       },
     ],
   },
   campaign: {
     eyebrow: "Now Booking",
-    heading: "Your pet's next groom, without the stress of getting there",
+    heading: "Book your dog's next groom",
     description:
-      "Skip the crate, the car ride, and the waiting room. Book a mobile grooming appointment and give your pet a calm, one-on-one experience — right at home.",
+      "Request an appointment online and bring your dog in for a calm, professional grooming experience at our salon in Çukurova, Adana.",
     perks: [
-      "Comes directly to your door",
-      "Calm, one-on-one attention",
-      "Flexible scheduling that fits your day",
+      "Internationally certified groomer",
+      "Breed-specific trims and model cuts",
+      "Easy online appointment requests",
     ],
-    ctaLabel: "Book Your Pet's Groom",
+    ctaLabel: "Book Your Dog's Groom",
   },
   mobileHighlight: {
-    eyebrow: "Mobile Service",
-    heading: "Grooming, delivered to your door",
+    eyebrow: "Our Salon",
+    heading: "A real, hands-on grooming salon",
     description:
-      "No crate, no car ride, no waiting room. Our mobile grooming service means your pet is cared for in a familiar, low-stress setting — right at home.",
+      "Patim Pet Kuaför is a dedicated dog grooming salon in Çukurova, Adana — not a chain, and not a drop-in counter at a larger store. Every dog gets focused, careful attention from our certified groomer.",
     bullets: [
-      "Grooming happens where your pet is most comfortable",
-      "No transport or drop-off required",
-      "One-on-one attention from start to finish",
+      "Internationally certified groomer",
+      "Breed-specific trims and model cuts",
+      "A real salon you can visit in Çukurova, Adana",
     ],
-    // Reuses one of the Hero's own vehicle photos (see hero.gallery above) —
-    // same real van, already a clean 16:9 shot with the pet mural fully
-    // visible, so no new asset/crop was needed for this landscape panel.
-    image: "/hero/hero-van-side.jpg",
+    image: "/salon/exterior.jpg",
   },
   whyKulapaws: {
-    heading: "Why KulaPAWS",
-    description: "A pet-care brand built to feel approachable, caring, and easy to trust.",
+    heading: "Why Patim Pet Kuaför",
+    description: "A dog grooming salon built on real certification and hands-on care.",
     items: [
-      { title: "Caring by default", description: "Every visit is centered on your pet's comfort, not just the groom." },
-      { title: "Genuinely convenient", description: "Mobile service means grooming fits into your day, not the other way around." },
-      { title: "Clean & professional", description: "A consistent, careful approach to every appointment." },
+      { title: "Certified groomer", description: "Internationally certified, with real grooming expertise." },
+      { title: "Personal service", description: "A real, local salon — every dog gets individual attention." },
+      { title: "Trusted locally", description: "Rated 4.3 stars by real customers in Adana." },
     ],
   },
   productsPreview: {
     heading: "Pet-Care Products",
-    description: "Alongside grooming, KulaPAWS offers pet-care products for the home.",
+    description: "Alongside grooming, Patim Pet Kuaför is also a pet shop for the home.",
   },
   howItWorks: {
     heading: "How It Works",
-    description: "Getting your pet groomed at home is straightforward.",
+    description: "Booking a groom at Patim Pet Kuaför is straightforward.",
     steps: [
-      { title: "Request a visit", description: "Tell us about your pet and choose a time online — we'll confirm it with you." },
-      { title: "We come to you", description: "Our mobile grooming service arrives at your home." },
-      { title: "Your pet is pampered", description: "A calm, one-on-one grooming session on-site." },
+      { title: "Request an appointment", description: "Tell us about your dog and choose a time online — we'll confirm it with you." },
+      { title: "Bring your dog in", description: "Visit our salon in Çukurova, Adana at your appointment time." },
+      { title: "Your dog is groomed", description: "A calm, professional grooming session with our certified groomer." },
     ],
   },
   testimonials: {
     eyebrow: "Customer Experiences",
-    heading: "What do the pet parents who trust us say?",
-    description: "A few words from pet parents who've had KulaPAWS come to their door.",
-    // TEMPORARY DEMO TESTIMONIALS — REPLACE WITH VERIFIED GOOGLE/INSTAGRAM
-    // REVIEWS. These are placeholder quotes written to demonstrate the
-    // testimonials layout only — no `source` is set on any of them because
-    // none of them are real, attributable reviews (see the `source` field
-    // note on Testimonial in TestimonialsSection.tsx). Swap this array for
-    // real reviews once collected; the shape (text/name/avatar?/source?/
-    // rating?) is designed so that's a data-only change.
+    heading: "What do our customers say?",
+    description: "Real reviews from Patim Pet Kuaför's Google Business Profile (4.3 stars, 17 reviews).",
+    // Quoted verbatim in the reviewers' original Turkish rather than
+    // translated — these are real, attributable quotes, and translating a
+    // direct quote risks misrepresenting what the reviewer actually wrote.
     items: [
       {
-        text: "KulaPAWS came right to our door and our dog didn't feel stressed at all — such a relaxed experience for both of us.",
-        name: "Elif A.",
+        text: "Güleryüzlü, bilgili, ilgili ve temiz bir mekan tavsiye ederim",
+        name: "Murat Nadar",
+        source: "Google",
         rating: 5,
       },
       {
-        text: "No crate, no car ride, just a calm groom at home. Our cat actually seemed comfortable the whole time.",
-        name: "Mert Y.",
+        text: "İşinde cok iyi gonul rahatlığıyla patili dostunuzu güveneceğini tek adres",
+        name: "Fatma Erkmen",
+        source: "Google",
         rating: 5,
       },
       {
-        text: "The team was gentle and patient with our older dog. We'll definitely be booking again.",
-        name: "Ayşe K.",
-        rating: 4,
-      },
-      {
-        text: "Booking was easy and they showed up right on time. The van has everything they need.",
-        name: "Caner B.",
-        rating: 5,
-      },
-      {
-        text: "Our Pomeranian came out looking fluffy and happy. Great attention to detail.",
-        name: "Zeynep T.",
-        rating: 5,
-      },
-      {
-        text: "Having the groomer come to us made such a difference for our anxious cat.",
-        name: "Baran S.",
-        rating: 5,
-      },
-      {
-        text: "Professional, friendly, and clearly good with animals. Highly recommend the mobile service.",
-        name: "Deniz K.",
-        rating: 5,
-      },
-      {
-        text: "Quick to respond on WhatsApp and flexible with scheduling around our day.",
-        name: "Selin M.",
-        rating: 4,
-      },
-      {
-        text: "Our dog usually hates grooming day, but this time he was calm the whole visit.",
-        name: "Onur Ç.",
+        text: "Güler yüz ve kaliteli hizmet. Tertemiz bir çalışma. Tavsiye ederim.",
+        name: "Yusuf Tosun",
+        source: "Google",
         rating: 5,
       },
     ],
@@ -375,7 +294,7 @@ export const homepage: HomepageContent = {
     heading: "Frequently Asked Questions",
   },
   finalCta: {
-    heading: "Ready to book your pet's next groom?",
+    heading: "Ready to book your dog's next groom?",
     description: "Request an appointment online and we'll confirm your visit.",
   },
 };

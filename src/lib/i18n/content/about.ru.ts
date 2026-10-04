@@ -6,31 +6,28 @@ import type { AboutContent } from "@/data/about";
 export const aboutRu: AboutContent = {
   header: {
     eyebrow: "О нас",
-    title: "Бренд по уходу за питомцами, созданный ради удобства и заботы",
+    title: "Салон груминга собак, построенный на реальном опыте",
     description:
-      "KulaPAWS — это мобильная служба груминга для собак и кошек: мы приезжаем к вам с грумингом, мытьём и уходом за питомцем, без необходимости куда-либо ехать.",
+      "Patim Pet Kuaför — салон груминга собак в Чукурова, Адана, которым руководит Фаик Копуз, грумер с международной сертификацией.",
   },
   mobileStory: {
-    eyebrow: "Выездная служба",
-    heading: "Почему мы приезжаем к вам",
+    eyebrow: "Наш салон",
+    heading: "Посетите наш салон в Чукурова, Адана",
     description:
-      "Обычный груминг — это поездка на машине, зал ожидания и незнакомая обстановка. Идея KulaPAWS проще: приносить груминг в привычную для питомца среду.",
-    // Matches the English default (src/data/about.ts) and homepage's own
-    // mobileHighlight.image — same real Hero van photo, real default
-    // instead of a placeholder. Still just the default; admin can still
-    // override it via /admin/images.
-    image: "/hero/hero-van-side.jpg",
+      "Приводите свою собаку в наш салон для спокойного и профессионального груминга — стрижки по породе, модельные стрижки, мытьё и полный уход от нашего сертифицированного грумера.",
+    // Real salon exterior photo — see public/salon/exterior.jpg.
+    image: "/salon/exterior.jpg",
   },
   values: {
     heading: "Что для нас важно",
     items: [
-      { title: "Открытость", description: "Дружелюбный, понятный сервис без лишней суеты." },
-      { title: "Забота", description: "Каждый визит строится вокруг комфорта вашего питомца." },
-      { title: "Практичность", description: "Удобно, чисто и легко вписывается в ваш распорядок дня." },
+      { title: "Сертификация", description: "Международная сертификация и реальный профессионализм." },
+      { title: "Забота", description: "Каждый визит строится вокруг комфорта вашей собаки." },
+      { title: "Индивидуальный подход", description: "Настоящий, семейный салон — не сетевая точка." },
     ],
   },
   cta: {
     heading: "Хотите узнать больше?",
-    description: "Свяжитесь с нами, если у вас есть вопросы о KulaPAWS.",
+    description: "Свяжитесь с нами, если у вас есть вопросы о Patim Pet Kuaför.",
   },
 };

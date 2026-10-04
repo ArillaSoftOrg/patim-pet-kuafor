@@ -5,5 +5,5 @@ import type { ContactPageContent } from "@/data/contactPage";
 export const contactPageRu: ContactPageContent = {
   title: "Свяжитесь с нами",
   description:
-    "KulaPAWS — мобильная служба груминга собак и кошек: мы приезжаем к вам, поэтому отдельного адреса для визита нет. Свяжитесь с нами по телефону, в WhatsApp или Instagram.",
+    "Patim Pet Kuaför — салон груминга собак в Чукурова, Адана. Свяжитесь с нами по телефону, в WhatsApp или Instagram, либо посетите нас лично.",
 };

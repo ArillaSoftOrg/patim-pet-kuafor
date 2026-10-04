@@ -9,11 +9,11 @@ import { join } from "node:path";
 // in the repo yet) and uses Satori's default sans rather than trying to
 // load a font file that doesn't exist.
 export const socialImageSize = { width: 1200, height: 630 };
-export const socialImageAlt = "KulaPAWS — Mobile Dog & Cat Grooming";
+export const socialImageAlt = "Patim Pet Kuaför — Dog Grooming Salon";
 
 export async function renderSocialImageElement() {
-  const logoBuffer = await readFile(join(process.cwd(), "public/brand/logo.jpg"));
-  const logoSrc = `data:image/jpeg;base64,${logoBuffer.toString("base64")}`;
+  const logoBuffer = await readFile(join(process.cwd(), "public/brand/logo.png"));
+  const logoSrc = `data:image/png;base64,${logoBuffer.toString("base64")}`;
 
   return (
     <div
@@ -24,37 +24,37 @@ export async function renderSocialImageElement() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#fff9f4",
+        backgroundColor: "#fdf8f2",
       }}
     >
       {/* eslint-disable-next-line @next/next/no-img-element -- decorative
-          mark in a generated image; "KulaPAWS" is rendered as real text
-          right below it */}
+          mark in a generated image; "Patim Pet Kuaför" is rendered as real
+          text right below it */}
       <img
         src={logoSrc}
         alt=""
         width={140}
         height={140}
-        style={{ borderRadius: 9999, border: "6px solid #a83e68" }}
+        style={{ borderRadius: 9999, border: "6px solid #3c1704" }}
       />
       <div
         style={{
           marginTop: 40,
           fontSize: 84,
           fontWeight: 700,
-          color: "#292526",
+          color: "#2b2016",
         }}
       >
-        KulaPAWS
+        Patim Pet Kuaför
       </div>
       <div
         style={{
           marginTop: 20,
           fontSize: 38,
-          color: "#a83e68",
+          color: "#3c1704",
         }}
       >
-        Mobile Dog & Cat Grooming
+        Dog Grooming Salon
       </div>
     </div>
   );

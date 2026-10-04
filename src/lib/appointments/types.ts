@@ -27,7 +27,7 @@ export interface PetDetails {
 }
 
 export interface AppointmentAddress {
-  // One of business.serviceAreas — Kulapaws only travels within these.
+  // One of business.serviceAreas — Patim Pet Kuaför's confirmed service area.
   serviceArea: string;
   addressLine: string;
   addressDetails: string;

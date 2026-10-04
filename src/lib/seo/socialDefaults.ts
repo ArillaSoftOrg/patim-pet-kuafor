@@ -9,7 +9,7 @@ import { socialImageAlt, socialImageSize } from "@/lib/seo/socialImage";
 // docs).
 export const OG_SITE_DEFAULTS = {
   type: "website" as const,
-  siteName: "KulaPAWS",
+  siteName: "Patim Pet Kuaför",
 };
 
 export const TWITTER_CARD = "summary_large_image" as const;

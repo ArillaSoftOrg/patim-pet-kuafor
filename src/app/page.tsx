@@ -10,12 +10,12 @@ import { homepage } from "@/data/homepage";
 // Kept independent of homepage.hero.description (the on-page hero copy):
 // that copy mentions pet-care products, but src/data/products.ts is
 // currently empty (no real product has been confirmed), so metadata
-// stays scoped to the one thing that's actually real today — mobile dog
-// and cat grooming — rather than claiming a product offering that isn't
-// live yet.
-const TITLE = "KulaPAWS | Mobile Dog & Cat Grooming";
+// stays scoped to the one thing that's actually real today — dog
+// grooming at our Çukurova, Adana salon — rather than claiming a product
+// offering that isn't live yet.
+const TITLE = "Patim Pet Kuaför | Dog Grooming Salon";
 const DESCRIPTION =
-  "KulaPAWS offers mobile dog and cat grooming, delivered to your home so your pet can be groomed in a calm, familiar space.";
+  "Patim Pet Kuaför is a dog grooming salon in Çukurova, Adana — breed-specific trims, model cuts, and full-service care from an internationally certified groomer.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

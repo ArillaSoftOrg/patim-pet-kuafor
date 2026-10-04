@@ -36,21 +36,21 @@
     "contactUs": "Bize Ulaşın",
     "whatsapp": "WhatsApp",
     "whatsappFloating": {
-      "ariaLabel": "KulaPAWS ile WhatsApp'tan sohbet edin (yeni sekmede açılır)",
-      "message": "Merhaba, KulaPAWS hizmetleri hakkında bilgi almak istiyorum."
+      "ariaLabel": "Patim Pet Kuaför ile WhatsApp'tan sohbet edin (yeni sekmede açılır)",
+      "message": "Merhaba, Patim Pet Kuaför hizmetleri hakkında bilgi almak istiyorum."
     },
     "whatsappContact": {
-      "message": "Merhaba, KulaPAWS ile iletişime geçmek istiyorum."
+      "message": "Merhaba, Patim Pet Kuaför ile iletişime geçmek istiyorum."
     },
     "instagramLink": {
-      "ariaLabel": "KulaPAWS'ı Instagram'da takip edin (yeni sekmede açılır)"
+      "ariaLabel": "Patim Pet Kuaför'ü Instagram'da takip edin (yeni sekmede açılır)"
     },
     "learnMore": "Daha fazla bilgi →",
     "photoComingSoonTemplate": "{name} fotoğrafı yakında",
     "galleryPlaceholderLabel": "Fotoğraf yakında",
     "viewServiceDetails": "Detayları Gör",
     "exploreServices": "Hizmetlerimizi Keşfedin",
-    "howMobileGroomingWorks": "Mobil Bakım Nasıl Çalışır",
+    "howMobileGroomingWorks": "Nasıl Çalışır",
     "visitFaqPage": "SSS Sayfasını Ziyaret Edin",
     "overview": "Genel Bakış",
     "whoItsFor": "Kimler İçin Uygun",
@@ -64,18 +64,18 @@
     "faqEmptyTitle": "Sıkça sorulan sorular hazırlanıyor",
     "faqEmptyDescription": "Yayından önce gerçek ve onaylanmış yanıtlar burada paylaşılacak.",
     "productsEmptyTitle": "Ürünler yakında burada",
-    "productsEmptyDescription": "Gerçek KulaPAWS evcil hayvan bakım ürünleri onaylandığında burada listelenecek.",
+    "productsEmptyDescription": "Gerçek Patim Pet Kuaför evcil hayvan bakım ürünleri onaylandığında burada listelenecek.",
     "serviceNotFoundTitle": "Hizmet bulunamadı",
     "serviceNotFoundDescription": "Bu hizmet kaldırılmış olabilir veya bağlantı hatalı olabilir.",
     "productNotFoundTitle": "Ürün bulunamadı",
     "productNotFoundDescription": "Bu ürün kaldırılmış olabilir veya bağlantı hatalı olabilir.",
     "servingLabel": "Hizmet verilen bölgeler:",
-    "heroImageLabel": "KulaPAWS mobil bakım fotoğrafı yakında",
-    "heroImageAlt": "KulaPAWS mobil bakım",
-    "mobileHighlightImageLabel": "Mobil bakım aracı fotoğrafı yakında",
-    "mobileHighlightImageAlt": "KulaPAWS mobil bakım aracı",
-    "aboutImageLabel": "KulaPAWS ekibi fotoğrafı yakında",
-    "aboutImageAlt": "KulaPAWS ekibi",
+    "heroImageLabel": "Patim Pet Kuaför fotoğrafı yakında",
+    "heroImageAlt": "Patim Pet Kuaför köpek bakımı",
+    "mobileHighlightImageLabel": "Salon fotoğrafı yakında",
+    "mobileHighlightImageAlt": "Patim Pet Kuaför salonu",
+    "aboutImageLabel": "Patim Pet Kuaför fotoğrafı yakında",
+    "aboutImageAlt": "Patim Pet Kuaför salonu",
     "contactForm": {
       "heading": "Bize mesaj gönderin",
       "unavailableTitle": "Online form yakında",
@@ -88,11 +88,11 @@
     },
     "faqPage": {
       "title": "Sıkça sorulan sorular",
-      "description": "Hizmetlerimiz, mobil bakım ve ürünlerimiz hakkında yanıtlar."
+      "description": "Hizmetlerimiz ve ürünlerimiz hakkında yanıtlar."
     },
     "productsPage": {
       "title": "Ürünler",
-      "description": "KulaPAWS ürünlerini keşfedin. Evcil dostunuz için seçilmiş ürünleri inceleyin."
+      "description": "Patim Pet Kuaför ürünlerini keşfedin. Köpeğiniz için seçilmiş ürünleri inceleyin."
     },
     "productFilter": {
       "all": "Tümü",
@@ -245,8 +245,8 @@
       "sections": {
         "hero": "Ana Görsel Alanı",
         "servicesSection": "Hizmetler Bölümü",
-        "mobileHighlight": "Mobil Hizmet Vurgusu",
-        "whyKulapaws": "Neden Kulapaws",
+        "mobileHighlight": "Salon Vurgusu",
+        "whyKulapaws": "Neden Patim Pet Kuaför",
         "productsPreview": "Ürünler Önizlemesi",
         "howItWorks": "Nasıl Çalışır",
         "faqPreview": "SSS Önizlemesi",

@@ -23,7 +23,7 @@ export interface LegalIdentity {
 }
 
 export const legalIdentity: LegalIdentity = {
-  tradeName: "KulaPAWS",
+  tradeName: "Patim Pet Kuaför",
   legalName: null,
   mersisNo: null,
   taxOffice: null,
@@ -115,7 +115,7 @@ export const legalCopy: LegalCopy = {
     updated: LAST_UPDATED,
     showIdentity: true,
     intro:
-      "This Disclosure Notice is prepared under Article 10 of Turkish Law No. 6698 on the Protection of Personal Data (\"KVKK\") to inform individuals who submit an appointment request through the KulaPAWS website about how their personal data is processed, in KulaPAWS's capacity as data controller.",
+      "This Disclosure Notice is prepared under Article 10 of Turkish Law No. 6698 on the Protection of Personal Data (\"KVKK\") to inform individuals who submit an appointment request through the Patim Pet Kuaför website about how their personal data is processed, in Patim Pet Kuaför's capacity as data controller.",
     sections: [
       {
         id: "data-collected",
@@ -129,7 +129,7 @@ export const legalCopy: LegalCopy = {
             type: "list",
             items: [
               "Identity and contact data: full name, phone number, and (if provided) email address.",
-              "Location data: the service area, street address, and any additional address details (building, floor, apartment) where the visit is to take place.",
+              "Location data: the service area and any address or contact details you provide for the appointment.",
               "Appointment data: the service, date and time selected, the price quoted, and any notes you add.",
               "Pet-related information: your pet's name, species, breed, size and care notes. On its own, this does not identify a natural person and is not \"personal data\" under KVKK, but it is listed here for transparency.",
             ],
@@ -146,11 +146,11 @@ export const legalCopy: LegalCopy = {
         blocks: [
           {
             type: "p",
-            text: "Your personal data is processed to evaluate, plan and confirm your appointment request, to carry out the mobile grooming visit, to contact you about it, to prevent duplicate bookings and abuse of the booking system (for example, an unusually high number of requests from the same phone number in a short period), and to meet applicable legal record-keeping obligations.",
+            text: "Your personal data is processed to evaluate, plan and confirm your appointment request, to carry out your grooming appointment, to contact you about it, to prevent duplicate bookings and abuse of the booking system (for example, an unusually high number of requests from the same phone number in a short period), and to meet applicable legal record-keeping obligations.",
           },
           {
             type: "p",
-            text: "Your data is not processed for marketing, advertising or profiling purposes. Because no such processing takes place, no separate marketing consent is requested through the booking form. If KulaPAWS begins sending campaign, discount or promotional messages in the future, this will rely solely on a separate, optional, never pre-checked, explicitly given consent — never required to submit an appointment request, and withdrawable at any time.",
+            text: "Your data is not processed for marketing, advertising or profiling purposes. Because no such processing takes place, no separate marketing consent is requested through the booking form. If Patim Pet Kuaför begins sending campaign, discount or promotional messages in the future, this will rely solely on a separate, optional, never pre-checked, explicitly given consent — never required to submit an appointment request, and withdrawable at any time.",
           },
         ],
       },
@@ -165,9 +165,9 @@ export const legalCopy: LegalCopy = {
           {
             type: "list",
             items: [
-              "processing is directly related to the establishment or performance of a contract (planning and carrying out the grooming visit you requested);",
-              "processing is necessary for KulaPAWS to comply with its legal obligations (for example, record-keeping obligations under applicable legislation);",
-              "processing is necessary for KulaPAWS's legitimate interests, provided this does not harm your fundamental rights and freedoms (preventing duplicate bookings and abuse of the booking system).",
+              "processing is directly related to the establishment or performance of a contract (planning and carrying out the grooming appointment you requested);",
+              "processing is necessary for Patim Pet Kuaför to comply with its legal obligations (for example, record-keeping obligations under applicable legislation);",
+              "processing is necessary for Patim Pet Kuaför's legitimate interests, provided this does not harm your fundamental rights and freedoms (preventing duplicate bookings and abuse of the booking system).",
             ],
           },
           {
@@ -188,7 +188,7 @@ export const legalCopy: LegalCopy = {
             type: "list",
             items: [
               "Service providers that operate the website's technical infrastructure (database, authentication and file storage), currently Supabase, acting as data processor; the specific hosting/infrastructure provider is noted under \"Infrastructure\" in the Privacy Policy.",
-              "WhatsApp, only if and when you choose to send your appointment details through the pre-filled WhatsApp link on the confirmation screen — that message is then handled by WhatsApp under its own terms, outside KulaPAWS's control.",
+              "WhatsApp, only if and when you choose to send your appointment details through the pre-filled WhatsApp link on the confirmation screen — that message is then handled by WhatsApp under its own terms, outside Patim Pet Kuaför's control.",
               "Public authorities, only where a legal request or obligation requires it.",
             ],
           },
@@ -246,7 +246,7 @@ export const legalCopy: LegalCopy = {
     updated: LAST_UPDATED,
     showIdentity: true,
     intro:
-      "This Privacy Policy explains what information the KulaPAWS website collects, how it is used and protected, and which outside services are involved. For the formal statutory disclosure of personal-data processing, see the KVKK Disclosure Notice.",
+      "This Privacy Policy explains what information the Patim Pet Kuaför website collects, how it is used and protected, and which outside services are involved. For the formal statutory disclosure of personal-data processing, see the KVKK Disclosure Notice.",
     sections: [
       {
         id: "scope",
@@ -254,7 +254,7 @@ export const legalCopy: LegalCopy = {
         blocks: [
           {
             type: "p",
-            text: "This policy covers the public KulaPAWS website and the appointment-request flow. It does not cover the admin panel's internal use by authorized staff, which is governed separately as part of their working arrangement with the business.",
+            text: "This policy covers the public Patim Pet Kuaför website and the appointment-request flow. It does not cover the admin panel's internal use by authorized staff, which is governed separately as part of their working arrangement with the business.",
           },
         ],
       },
@@ -288,11 +288,11 @@ export const legalCopy: LegalCopy = {
         blocks: [
           {
             type: "p",
-            text: "Communications from KulaPAWS fall into two separate categories. Notifications that your appointment request has been received, confirmed, is coming up, has been rescheduled, or has been cancelled are service communications — they are part of your appointment and never require marketing consent. Marketing communications — campaigns, discounts or promotional content — are an entirely separate category, sent only on the basis of a separate, optional, explicitly given consent that is never required to book an appointment.",
+            text: "Communications from Patim Pet Kuaför fall into two separate categories. Notifications that your appointment request has been received, confirmed, is coming up, has been rescheduled, or has been cancelled are service communications — they are part of your appointment and never require marketing consent. Marketing communications — campaigns, discounts or promotional content — are an entirely separate category, sent only on the basis of a separate, optional, explicitly given consent that is never required to book an appointment.",
           },
           {
             type: "p",
-            text: "As of the date on this page, KulaPAWS does not send marketing messages and does not collect marketing consent. If this is enabled in the future, consent will be requested completely independently of the booking process, through an option that is never pre-checked, and may be withdrawn at any time.",
+            text: "As of the date on this page, Patim Pet Kuaför does not send marketing messages and does not collect marketing consent. If this is enabled in the future, consent will be requested completely independently of the booking process, through an option that is never pre-checked, and may be withdrawn at any time.",
           },
         ],
       },
@@ -325,7 +325,7 @@ export const legalCopy: LegalCopy = {
             items: [
               "Supabase — database, authentication and file-storage infrastructure (data processor).",
               "WhatsApp — only used if you choose to open the pre-filled WhatsApp link; governed by WhatsApp's own terms.",
-              "Instagram — a social-media link to KulaPAWS's public profile; visiting it is governed by Instagram's own terms.",
+              "Instagram — a social-media link to Patim Pet Kuaför's public profile; visiting it is governed by Instagram's own terms.",
             ],
           },
           {
@@ -371,7 +371,7 @@ export const legalCopy: LegalCopy = {
     updated: LAST_UPDATED,
     showIdentity: false,
     intro:
-      "This Cookie Policy explains which cookies and similar browser-storage technologies (localStorage) the KulaPAWS website uses, and why.",
+      "This Cookie Policy explains which cookies and similar browser-storage technologies (localStorage) the Patim Pet Kuaför website uses, and why.",
     sections: [
       {
         id: "what-we-use",
@@ -380,7 +380,7 @@ export const legalCopy: LegalCopy = {
           {
             type: "list",
             items: [
-              "kulapaws_locale — strictly necessary/functional cookie. Remembers your chosen display language (English/Turkish/Russian). Set by KulaPAWS. Duration: 1 year.",
+              "patimpet_locale — strictly necessary/functional cookie. Remembers your chosen display language (English/Turkish/Russian). Set by Patim Pet Kuaför. Duration: 1 year.",
               "Supabase session cookies (sb-*) — strictly necessary cookie. Created only when an authorized staff member signs in to the admin panel at /admin. Ordinary visitors never receive this cookie.",
               "localStorage (browser local storage) — strictly necessary/functional. Caches public, non-personal content (services, products, FAQs, business contact details) for fast, flicker-free display. It does not identify or track visitors.",
             ],

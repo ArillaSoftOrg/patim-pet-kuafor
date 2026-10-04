@@ -30,7 +30,7 @@ export function Hero({
   secondaryCta,
   image,
   gallery = [],
-  imageAlt = "KulaPAWS mobile grooming",
+  imageAlt = "Patim Pet Kuaför dog grooming",
 }: HeroProps) {
   const media = image ? [image] : gallery;
 

@@ -64,10 +64,10 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: "KulaPAWS",
-    template: "%s | KulaPAWS",
+    default: "Patim Pet Kuaför",
+    template: "%s | Patim Pet Kuaför",
   },
-  description: "Mobile pet grooming and pet-care products.",
+  description: "Dog grooming salon in Çukurova, Adana.",
   // No `locale` — the only confirmed language signal is <html lang="en">
   // below, which has no territory (US, GB, ...); business.address is
   // still null, so there's no confirmed location to justify one over

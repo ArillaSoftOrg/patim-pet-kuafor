@@ -6,31 +6,28 @@ import type { AboutContent } from "@/data/about";
 export const aboutTr: AboutContent = {
   header: {
     eyebrow: "Hakkımızda",
-    title: "Kolaylık ve özen etrafında kurulmuş bir evcil hayvan bakım markası",
+    title: "Gerçek deneyim üzerine kurulmuş bir köpek kuaförü salonu",
     description:
-      "KulaPAWS, köpekler ve kediler için mobil bir bakım hizmetidir — bakım, yıkama ve evcil hayvan özeni hizmetlerini, ziyaret edeceğiniz bir mağaza olmadan size getiriyoruz.",
+      "Patim Pet Kuaför, Çukurova, Adana'da, uluslararası sertifikalı evcil hayvan kuaförü Faik Kopuz tarafından işletilen bir köpek bakım salonudur.",
   },
   mobileStory: {
-    eyebrow: "Mobil Hizmet",
-    heading: "Neden size geliyoruz",
+    eyebrow: "Salonumuz",
+    heading: "Çukurova, Adana'daki salonumuzu ziyaret edin",
     description:
-      "Geleneksel bakım; araba yolculuğu, bekleme salonu ve yabancı bir ortam anlamına gelir. KulaPAWS, daha basit bir fikir üzerine kuruldu: bakımı, evcil dostunuzun kendi ortamına getirmek.",
-    // Matches the English default (src/data/about.ts) and homepage's own
-    // mobileHighlight.image — same real Hero van photo, real default
-    // instead of a placeholder. Still just the default; admin can still
-    // override it via /admin/images.
-    image: "/hero/hero-van-side.jpg",
+      "Köpeğinizi sertifikalı kuaförümüzün elinde sakin ve profesyonel bir bakım deneyimi için salonumuza getirin — ırka özel tıraşlar, model kesimler, banyo ve tam kapsamlı bakım.",
+    // Real salon exterior photo — see public/salon/exterior.jpg.
+    image: "/salon/exterior.jpg",
   },
   values: {
     heading: "Bizim için önemli olan",
     items: [
-      { title: "Yakın", description: "Gösterişsiz, samimi ve anlaşılır bir hizmet." },
-      { title: "Şefkatli", description: "Her randevu, evcil dostunuzun konforu etrafında şekillenir." },
-      { title: "Pratik", description: "Pratik, temiz ve rutininize kolayca uyan bir hizmet." },
+      { title: "Sertifikalı", description: "Uluslararası sertifikalı, gerçek uzmanlıkla yapılan bakım." },
+      { title: "Şefkatli", description: "Her randevu, köpeğinizin konforu etrafında şekillenir." },
+      { title: "Kişisel", description: "Gerçek, yakından ilgilenen bir salon — zincir mağaza değil." },
     ],
   },
   cta: {
     heading: "Daha fazla bilgi mi almak istiyorsunuz?",
-    description: "KulaPAWS hakkında sorularınız için bize ulaşın.",
+    description: "Patim Pet Kuaför hakkında sorularınız için bize ulaşın.",
   },
 };

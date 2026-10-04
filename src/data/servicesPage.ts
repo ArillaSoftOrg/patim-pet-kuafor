@@ -14,9 +14,9 @@ export interface ServicesPageContent {
 export const servicesPageContent: ServicesPageContent = {
   header: {
     eyebrow: "Services",
-    title: "Grooming services for dogs and cats",
+    title: "Dog grooming services",
     description:
-      "Every KulaPAWS service is delivered through our mobile setup, brought directly to your home.",
+      "Every Patim Pet Kuaför service is delivered at our salon in Çukurova, Adana.",
   },
   cta: {
     heading: "Not sure which service fits your pet?",

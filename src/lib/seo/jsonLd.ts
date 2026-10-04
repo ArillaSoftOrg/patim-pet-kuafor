@@ -8,14 +8,16 @@ export function organizationJsonLdId(): string {
   return `${getSiteUrl()}/#organization`;
 }
 
-// Organization, not LocalBusiness: Kulapaws is a mobile/service-area
-// business with no address customers visit, and Google's LocalBusiness
-// rich-result eligibility requires `address` — a business genuinely
-// without one shouldn't claim that type just to get areaServed-style
-// semantics. Organization supports telephone/logo/sameAs/areaServed too,
-// without implying a claim this business can't back up. No `address`,
-// `geo`, `openingHours`, `priceRange`, or ratings/review properties, full
-// stop — none of that is real, confirmed data.
+// LocalBusiness, not bare Organization: Patim Pet Kuaför is a real
+// storefront salon with a confirmed, visitable address (Google Business
+// Profile, Çukurova/Adana), which is exactly what LocalBusiness's
+// rich-result eligibility is for — unlike a service-area-only business
+// with nothing customers visit, claiming this type here is backed by a
+// real, confirmed fact. Still no `geo`, `openingHours`, `priceRange`, or
+// ratings/review properties — none of those are confirmed structured
+// data (the 4.3-star/17-review rating is real but only verified via
+// Google's own listing, not independently confirmable here, so it isn't
+// asserted as aggregateRating).
 //
 // Takes the resolved business data as a parameter rather than importing
 // src/data/business.ts directly, so the caller decides where it comes
@@ -30,13 +32,14 @@ export function buildOrganizationJsonLd(businessData: Business) {
 
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "LocalBusiness",
     "@id": organizationJsonLdId(),
     name: businessData.name,
     url: siteUrl,
     logo: `${siteUrl}${businessData.logoSrc}`,
-    description: "Mobile dog and cat grooming serving Antalya and the surrounding coastal towns.",
+    description: "Dog grooming salon in Çukurova, Adana.",
     ...(businessData.phone ? { telephone: businessData.phone } : {}),
+    ...(businessData.address ? { address: businessData.address } : {}),
     ...(instagram ? { sameAs: [instagram.url] } : {}),
     ...(businessData.serviceAreas.length > 0
       ? { areaServed: businessData.serviceAreas.map((area) => ({ "@type": "Place", name: area })) }

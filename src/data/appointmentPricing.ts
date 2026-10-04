@@ -27,14 +27,25 @@ export interface PricingConfig {
 }
 
 // The single place appointment pricing is configured. Every amount is
-// deliberately null: no real prices have been confirmed, and README.md
+// deliberately null: no real prices have been confirmed, and this project
 // forbids inventing them — the booking flow shows "price on request" for
 // these until real amounts are entered here. The rule structure itself
 // (which pet types each service covers, size bands for dogs) mirrors the
-// existing service descriptions in src/data/services.ts.
+// existing service descriptions in src/data/services.ts. Patim Pet Kuaför
+// offers dog grooming only (confirmed via its Google Business Profile
+// "Hizmetler" list) — no cat-pricing rules exist, matching that services
+// only cover petType: "dog" everywhere else in this app.
 export const appointmentPricing: PricingConfig = {
   currency: "TRY",
   services: [
+    {
+      serviceSlug: "dog-bath-blow-dry",
+      rules: [
+        { petType: "dog", size: "small", amount: null },
+        { petType: "dog", size: "medium", amount: null },
+        { petType: "dog", size: "large", amount: null },
+      ],
+    },
     {
       serviceSlug: "dog-grooming",
       rules: [
@@ -44,16 +55,27 @@ export const appointmentPricing: PricingConfig = {
       ],
     },
     {
-      serviceSlug: "cat-grooming",
-      rules: [{ petType: "cat", amount: null }],
-    },
-    {
-      serviceSlug: "mobile-pet-grooming",
+      serviceSlug: "nail-trimming",
       rules: [
         { petType: "dog", size: "small", amount: null },
         { petType: "dog", size: "medium", amount: null },
         { petType: "dog", size: "large", amount: null },
-        { petType: "cat", amount: null },
+      ],
+    },
+    {
+      serviceSlug: "ear-cleaning",
+      rules: [
+        { petType: "dog", size: "small", amount: null },
+        { petType: "dog", size: "medium", amount: null },
+        { petType: "dog", size: "large", amount: null },
+      ],
+    },
+    {
+      serviceSlug: "full-grooming-package",
+      rules: [
+        { petType: "dog", size: "small", amount: null },
+        { petType: "dog", size: "medium", amount: null },
+        { petType: "dog", size: "large", amount: null },
       ],
     },
   ],

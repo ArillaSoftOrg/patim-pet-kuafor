@@ -132,7 +132,7 @@ export function canTransitionStatus(from: AppointmentStatus, to: AppointmentStat
 }
 
 export interface AppointmentValidationContext {
-  // Current business.serviceAreas — the only areas Kulapaws travels to.
+  // Current business.serviceAreas — Patim Pet Kuaför's confirmed service area.
   serviceAreas: readonly string[];
   // Slots held by other appointments (slot-blocking statuses only).
   bookedSlots: readonly TimeSlot[];

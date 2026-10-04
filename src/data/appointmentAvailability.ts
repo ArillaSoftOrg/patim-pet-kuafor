@@ -26,8 +26,8 @@ export interface AvailabilityConfig {
   defaultDurationMinutes: number;
   // Per-service override, keyed by Service.slug.
   serviceDurationMinutes: Record<string, number>;
-  // Minimum gap kept between appointments (travel time for a mobile
-  // service), applied on both sides of an existing booking.
+  // Minimum gap kept between appointments (cleanup/turnover time at the
+  // salon), applied on both sides of an existing booking.
   bufferMinutes: number;
   // Earliest bookable start, measured from now.
   minLeadMinutes: number;

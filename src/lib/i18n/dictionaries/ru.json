@@ -36,21 +36,21 @@
     "contactUs": "Связаться с нами",
     "whatsapp": "WhatsApp",
     "whatsappFloating": {
-      "ariaLabel": "Написать KulaPAWS в WhatsApp (откроется в новой вкладке)",
-      "message": "Здравствуйте, хочу узнать больше об услугах KulaPAWS."
+      "ariaLabel": "Написать Patim Pet Kuaför в WhatsApp (откроется в новой вкладке)",
+      "message": "Здравствуйте, хочу узнать больше об услугах Patim Pet Kuaför."
     },
     "whatsappContact": {
-      "message": "Здравствуйте, хочу связаться с KulaPAWS."
+      "message": "Здравствуйте, хочу связаться с Patim Pet Kuaför."
     },
     "instagramLink": {
-      "ariaLabel": "Подписаться на KulaPAWS в Instagram (откроется в новой вкладке)"
+      "ariaLabel": "Подписаться на Patim Pet Kuaför в Instagram (откроется в новой вкладке)"
     },
     "learnMore": "Подробнее →",
     "photoComingSoonTemplate": "Фото «{name}» появится позже",
     "galleryPlaceholderLabel": "Фото скоро появится",
     "viewServiceDetails": "Подробнее",
     "exploreServices": "Смотреть наши услуги",
-    "howMobileGroomingWorks": "Как проходит мобильный груминг",
+    "howMobileGroomingWorks": "Как это работает",
     "visitFaqPage": "Перейти к разделу вопросов и ответов",
     "overview": "Обзор",
     "whoItsFor": "Кому подойдёт",
@@ -64,18 +64,18 @@
     "faqEmptyTitle": "Раздел вопросов и ответов пока наполняется",
     "faqEmptyDescription": "Здесь появятся реальные, проверенные ответы перед запуском.",
     "productsEmptyTitle": "Товары скоро появятся",
-    "productsEmptyDescription": "Здесь появятся реальные товары KulaPAWS, как только будут подтверждены.",
+    "productsEmptyDescription": "Здесь появятся реальные товары Patim Pet Kuaför, как только будут подтверждены.",
     "serviceNotFoundTitle": "Услуга не найдена",
     "serviceNotFoundDescription": "Возможно, эта услуга была удалена, либо ссылка указана неверно.",
     "productNotFoundTitle": "Товар не найден",
     "productNotFoundDescription": "Возможно, этот товар был удалён, либо ссылка указана неверно.",
     "servingLabel": "Зона обслуживания:",
-    "heroImageLabel": "Фото мобильного груминга KulaPAWS появится позже",
-    "heroImageAlt": "Мобильный груминг KulaPAWS",
-    "mobileHighlightImageLabel": "Фото автомобиля мобильного груминга появится позже",
-    "mobileHighlightImageAlt": "Автомобиль мобильного груминга KulaPAWS",
-    "aboutImageLabel": "Фото команды KulaPAWS появится позже",
-    "aboutImageAlt": "Команда KulaPAWS",
+    "heroImageLabel": "Фото Patim Pet Kuaför появится позже",
+    "heroImageAlt": "Груминг собак Patim Pet Kuaför",
+    "mobileHighlightImageLabel": "Фото салона появится позже",
+    "mobileHighlightImageAlt": "Салон Patim Pet Kuaför",
+    "aboutImageLabel": "Фото Patim Pet Kuaför появится позже",
+    "aboutImageAlt": "Салон Patim Pet Kuaför",
     "contactForm": {
       "heading": "Напишите нам",
       "unavailableTitle": "Онлайн-форма скоро появится",
@@ -88,11 +88,11 @@
     },
     "faqPage": {
       "title": "Часто задаваемые вопросы",
-      "description": "Ответы на вопросы о наших услугах, мобильном груминге и товарах."
+      "description": "Ответы на вопросы о наших услугах и товарах."
     },
     "productsPage": {
       "title": "Товары",
-      "description": "Откройте для себя товары KulaPAWS — подборку, отобранную для вашего питомца."
+      "description": "Откройте для себя товары Patim Pet Kuaför — подборку, отобранную для вашей собаки."
     },
     "productFilter": {
       "all": "Все",
@@ -245,8 +245,8 @@
       "sections": {
         "hero": "Главный экран",
         "servicesSection": "Раздел услуг",
-        "mobileHighlight": "Блок о выездной службе",
-        "whyKulapaws": "Почему Kulapaws",
+        "mobileHighlight": "Блок о салоне",
+        "whyKulapaws": "Почему Patim Pet Kuaför",
         "productsPreview": "Превью товаров",
         "howItWorks": "Как это работает",
         "faqPreview": "Превью вопросов и ответов",

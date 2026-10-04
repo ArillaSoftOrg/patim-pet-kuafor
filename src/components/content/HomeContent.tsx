@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { MobileSalonShowcase } from "@/components/sections/MobileSalonShowcase";
-import { BeforeAfterShowcase } from "@/components/sections/BeforeAfterShowcase";
+import { BeforeAfterSlider } from "@/components/sections/BeforeAfterSlider";
 import { CampaignSection } from "@/components/sections/CampaignSection";
 import { ServiceShowcase } from "@/components/sections/ServiceShowcase";
 import { FeatureSplit } from "@/components/sections/FeatureSplit";
@@ -105,14 +105,25 @@ export function HomeContent({
         tone="surface"
       />
 
-      <BeforeAfterShowcase
+      {/* A genuine before/after pair from the SAME Instagram carousel post
+          (3580036553405216578) — same dog, same backdrop, matching
+          face/markings in both frames. The full archive re-scan found no
+          other same-post or caption-confirmed pairs, so this stays a
+          single pair rather than a multi-pair gallery — see
+          src/data/homepage.ts's beforeAfter comment for the full sourcing
+          note. Drag-to-reveal slider, not the old pre-composited-image
+          carousel (BeforeAfterShowcase.tsx), since a real two-photo pair
+          needs two separate images, not one merged graphic. */}
+      <BeforeAfterSlider
         eyebrow={homepage.beforeAfter.eyebrow}
         heading={homepage.beforeAfter.heading}
         description={homepage.beforeAfter.description}
-        gallery={homepage.beforeAfter.gallery}
-        prevLabel={homepage.beforeAfter.prevLabel}
-        nextLabel={homepage.beforeAfter.nextLabel}
-        placeholderLabel={dictionary.shared.galleryPlaceholderLabel}
+        beforeLabel={homepage.beforeAfter.beforeLabel}
+        afterLabel={homepage.beforeAfter.afterLabel}
+        beforeSrc={homepage.beforeAfter.before.src}
+        afterSrc={homepage.beforeAfter.after.src}
+        beforeAlt={homepage.beforeAfter.before.alt}
+        afterAlt={homepage.beforeAfter.after.alt}
         tone="background"
       />
 
@@ -157,32 +168,42 @@ export function HomeContent({
         tone="surface"
       />
 
-      <Section tone="background">
-        <Container size="wide">
-          <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
-            <div className="max-w-[65ch]">
-              <Heading level="h2">{homepage.productsPreview.heading}</Heading>
-              <p className="mt-4 text-[16px] text-muted-foreground sm:text-[18px]">
-                {homepage.productsPreview.description}
-              </p>
+      {/* Hidden entirely while there are no real published products
+          (defaultProducts — server-resolved, see getProductsServer.ts —
+          is the accurate source for this today) rather than showing an
+          empty-state placeholder card on the homepage. The dedicated
+          /products page still shows its own empty state, since a visitor
+          who navigates there is explicitly looking for products. This
+          naturally reappears once real products are published, picked up
+          on the next page load (revalidate = 60, see layout.tsx). */}
+      {defaultProducts.length > 0 && (
+        <Section tone="background">
+          <Container size="wide">
+            <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
+              <div className="max-w-[65ch]">
+                <Heading level="h2">{homepage.productsPreview.heading}</Heading>
+                <p className="mt-4 text-[16px] text-muted-foreground sm:text-[18px]">
+                  {homepage.productsPreview.description}
+                </p>
+              </div>
+              <Link
+                href={buildLocalizedPath(locale, "/products")}
+                className="text-[15px] font-medium text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
+              >
+                {dictionary.shared.viewAllProducts}
+              </Link>
             </div>
-            <Link
-              href={buildLocalizedPath(locale, "/products")}
-              className="text-[15px] font-medium text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
-            >
-              {dictionary.shared.viewAllProducts}
-            </Link>
-          </div>
-          <div className="mt-10">
-            <ProductGridLive
-              defaultItems={defaultProducts}
-              limit={3}
-              emptyTitle={dictionary.shared.productsEmptyTitle}
-              emptyDescription={dictionary.shared.productsEmptyDescription}
-            />
-          </div>
-        </Container>
-      </Section>
+            <div className="mt-10">
+              <ProductGridLive
+                defaultItems={defaultProducts}
+                limit={3}
+                emptyTitle={dictionary.shared.productsEmptyTitle}
+                emptyDescription={dictionary.shared.productsEmptyDescription}
+              />
+            </div>
+          </Container>
+        </Section>
+      )}
 
       <ProcessSteps
         heading={homepage.howItWorks.heading}
@@ -199,13 +220,19 @@ export function HomeContent({
         tone="background"
       />
 
-      <FaqSectionsLive
-        mode="flat"
-        heading={homepage.faqPreview.heading}
-        defaultFaqs={defaultFaqs}
-        viewAllCta={{ label: dictionary.shared.visitFaqPage, href: buildLocalizedPath(locale, "/faq") }}
-        tone="surface"
-      />
+      {/* Hidden entirely while there are no real FAQs yet (defaultFaqs —
+          server-resolved — is the accurate source for this today), same
+          reasoning as the products section above. The dedicated /faq page
+          still shows its own "being finalized" empty state. */}
+      {defaultFaqs.length > 0 && (
+        <FaqSectionsLive
+          mode="flat"
+          heading={homepage.faqPreview.heading}
+          defaultFaqs={defaultFaqs}
+          viewAllCta={{ label: dictionary.shared.visitFaqPage, href: buildLocalizedPath(locale, "/faq") }}
+          tone="surface"
+        />
+      )}
 
       <CTASection
         heading={homepage.finalCta.heading}

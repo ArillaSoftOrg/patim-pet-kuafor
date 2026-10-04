@@ -86,7 +86,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
     <div className="flex min-h-full flex-1 flex-col md:flex-row">
       <div className="flex items-center justify-between border-b border-border bg-surface px-5 py-3 md:hidden">
         <div className="flex flex-col leading-tight">
-          <span className="text-[15px] font-bold text-foreground">Kulapaws</span>
+          <span className="text-[15px] font-bold text-foreground">Patim Pet Kuaför</span>
           <span className="text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
             {dictionary.admin.shell.badge}
           </span>
@@ -130,7 +130,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
 
       <aside className="hidden w-64 flex-shrink-0 flex-col border-r border-border bg-surface p-5 md:flex">
         <div className="flex flex-col leading-tight">
-          <span className="text-[16px] font-bold text-foreground">Kulapaws</span>
+          <span className="text-[16px] font-bold text-foreground">Patim Pet Kuaför</span>
           <span className="text-[12px] font-medium uppercase tracking-wide text-muted-foreground">
             {dictionary.admin.shell.badge}
           </span>

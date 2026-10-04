@@ -1,4 +1,4 @@
--- Initial Supabase content schema for Kulapaws.
+-- Initial Supabase content schema for Patim Pet.
 --
 -- Replaces the local-only content repositories (src/lib/content/*Repository.ts)
 -- with equivalent Supabase tables. This migration only creates schema +
@@ -257,7 +257,7 @@ grant select on public.page_content to anon, authenticated;
 insert into public.business (id, name, tagline, phone, email, whatsapp, address, service_areas, business_hours, social_links, logo_image_id)
 values (
   1,
-  'Kulapaws',
+  'Patim Pet',
   null,
   null,
   null,
@@ -276,7 +276,7 @@ values
   'dog-grooming',
   'Dog Grooming',
   'Grooming care for dogs of all sizes and coat types, brought to your door.',
-  $txt$Kulapaws offers dog grooming designed around your dog's comfort, delivered through our mobile service so there's no crate, no waiting room, and no stressful car ride.$txt$,
+  $txt$Patim Pet offers dog grooming designed around your dog's comfort, delivered through our mobile service so there's no crate, no waiting room, and no stressful car ride.$txt$,
   ARRAY[
     'Dogs who get anxious in traditional grooming salons',
     'Owners who want grooming done without leaving home',
@@ -294,7 +294,7 @@ values
   'cat-grooming',
   'Cat Grooming',
   'Low-stress cat grooming at home, without the carrier or the car ride.',
-  'Cats tend to do best in their own environment. Kulapaws brings cat grooming directly to your home, keeping the experience as calm and low-stress as possible.',
+  'Cats tend to do best in their own environment. Patim Pet brings cat grooming directly to your home, keeping the experience as calm and low-stress as possible.',
   ARRAY[
     'Cats who find travel and unfamiliar spaces stressful',
     'Owners who want grooming without a carrier trip',
@@ -312,7 +312,7 @@ values
   'mobile-pet-grooming',
   'Mobile Pet Grooming',
   'The convenience of professional grooming, delivered to your driveway.',
-  'Mobile grooming is at the core of what Kulapaws does: professional pet grooming that comes to you, so your pet is cared for in a familiar, comfortable environment.',
+  'Mobile grooming is at the core of what Patim Pet does: professional pet grooming that comes to you, so your pet is cared for in a familiar, comfortable environment.',
   ARRAY[
     'Busy schedules that make salon visits difficult',
     'Pets that do better without travel or waiting areas',
@@ -335,7 +335,7 @@ values (
   {
     "hero": {
       "heading": "Mobile pet grooming that comes to you",
-      "description": "Kulapaws brings professional dog and cat grooming, plus pet-care products, directly to your door — so your pet stays calm and comfortable at home.",
+      "description": "Patim Pet brings professional dog and cat grooming, plus pet-care products, directly to your door — so your pet stays calm and comfortable at home.",
       "image": null,
       "primaryCtaLabel": "Request Appointment",
       "secondaryCtaLabel": "Explore Services"
@@ -356,7 +356,7 @@ values (
       "image": null
     },
     "whyKulapaws": {
-      "heading": "Why Kulapaws",
+      "heading": "Why Patim Pet",
       "description": "A pet-care brand built to feel approachable, caring, and easy to trust.",
       "items": [
         {"title": "Caring by default", "description": "Every visit is centered on your pet's comfort, not just the groom."},
@@ -366,7 +366,7 @@ values (
     },
     "productsPreview": {
       "heading": "Pet-Care Products",
-      "description": "Alongside grooming, Kulapaws offers pet-care products for the home."
+      "description": "Alongside grooming, Patim Pet offers pet-care products for the home."
     },
     "howItWorks": {
       "heading": "How It Works",
@@ -397,12 +397,12 @@ values (
     "header": {
       "eyebrow": "About",
       "title": "A pet-care brand built around convenience and care",
-      "description": "Kulapaws is a mobile pet grooming and pet-care brand, focused on making grooming easier for pets and their people."
+      "description": "Patim Pet is a mobile pet grooming and pet-care brand, focused on making grooming easier for pets and their people."
     },
     "mobileStory": {
       "eyebrow": "Mobile Service",
       "heading": "Why we come to you",
-      "description": "Traditional grooming means a car ride, a waiting room, and an unfamiliar space. Kulapaws was built around a simpler idea: bring the grooming to your pet's own environment instead.",
+      "description": "Traditional grooming means a car ride, a waiting room, and an unfamiliar space. Patim Pet was built around a simpler idea: bring the grooming to your pet's own environment instead.",
       "image": null
     },
     "values": {
@@ -415,7 +415,7 @@ values (
     },
     "cta": {
       "heading": "Want to learn more?",
-      "description": "Reach out with any questions about Kulapaws."
+      "description": "Reach out with any questions about Patim Pet."
     }
   }
   $json$::jsonb
@@ -430,7 +430,7 @@ values (
     "header": {
       "eyebrow": "Services",
       "title": "Grooming services for dogs and cats",
-      "description": "Every Kulapaws service is delivered through our mobile setup, brought directly to your home."
+      "description": "Every Patim Pet service is delivered through our mobile setup, brought directly to your home."
     },
     "cta": {
       "heading": "Not sure which service fits your pet?",
