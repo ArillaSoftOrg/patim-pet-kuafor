@@ -73,7 +73,7 @@ const CARD_WIDTH_CLASS = "w-[290px] min-h-52 flex-none sm:w-80";
 // Two horizontally-looping rows of testimonial cards — the layout/
 // interaction concept from the shadcn/21st.dev "marquee-01" component
 // (duplicated content, one row forward, one reversed, edge fades), rebuilt
-// on top of the existing KulaPAWS TestimonialCard and copy; see Marquee
+// on top of the existing Patim Pet Kuaför TestimonialCard and copy; see Marquee
 // (components/ui/marquee-01-utils/marquee.tsx) for the actual looping
 // mechanism (CSS) and manual drag/wheel handling (JS, per-row, pauses only
 // while — and briefly after — the visitor is actively interacting). There

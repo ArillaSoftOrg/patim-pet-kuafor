@@ -222,7 +222,7 @@ export const appointmentCopy: AppointmentCopy = {
   locale: "en-GB",
   page: {
     title: "Request an appointment",
-    description: "Tell us about your pet and pick a time — we'll confirm your mobile grooming visit.",
+    description: "Tell us about your dog and pick a time — we'll confirm your appointment.",
   },
   loading: "Loading…",
   progressLabel: "Appointment steps",
@@ -230,7 +230,7 @@ export const appointmentCopy: AppointmentCopy = {
   steps: {
     service: { title: "Choose a service", description: "What would you like us to do?" },
     pet: { title: "Your pet", description: "A few details help us prepare for the visit." },
-    address: { title: "Address", description: "Where should we come? We travel within our service areas." },
+    address: { title: "Address", description: "Your contact and location details." },
     date: { title: "Date", description: "Pick a day that works for you." },
     time: { title: "Time", description: "Choose an available start time." },
     customer: { title: "Your details", description: "How can we reach you about this appointment?" },
@@ -367,12 +367,12 @@ export const appointmentCopy: AppointmentCopy = {
     intro: "When you request an appointment on this website, we ask for:",
     collected: [
       "your name and phone number, and optionally your email address",
-      "the address where the visit should take place, and its service area",
+      "your service area and address or contact details",
       "your pet's name, type, breed, size, and any notes you add",
       "the service, date and time you choose, and any notes for us",
     ],
     purpose:
-      "We use these details only to arrange, confirm and carry out your grooming visit, and to contact you about it.",
+      "We use these details only to arrange, confirm and carry out your grooming appointment, and to contact you about it.",
     whatsapp:
       "If you choose to send your appointment details to us on WhatsApp, that message is handled by WhatsApp under its own terms.",
   },

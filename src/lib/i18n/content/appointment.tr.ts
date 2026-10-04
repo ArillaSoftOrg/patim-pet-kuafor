@@ -15,7 +15,7 @@ export const appointmentCopyTr: AppointmentCopy = {
   locale: "tr-TR",
   page: {
     title: "Randevu talep edin",
-    description: "Evcil dostunuz hakkında bize bilgi verin ve bir zaman seçin — mobil bakım ziyaretinizi onaylayacağız.",
+    description: "Köpeğiniz hakkında bize bilgi verin ve bir zaman seçin — randevunuzu onaylayacağız.",
   },
   loading: "Yükleniyor…",
   progressLabel: "Randevu adımları",
@@ -23,7 +23,7 @@ export const appointmentCopyTr: AppointmentCopy = {
   steps: {
     service: { title: "Hizmet seçin", description: "Sizin için ne yapmamızı istersiniz?" },
     pet: { title: "Evcil dostunuz", description: "Birkaç detay, ziyarete hazırlanmamıza yardımcı olur." },
-    address: { title: "Adres", description: "Nereye gelmemizi istersiniz? Hizmet bölgelerimiz içinde seyahat ederiz." },
+    address: { title: "Adres", description: "İletişim ve konum bilgileriniz." },
     date: { title: "Tarih", description: "Size uygun bir gün seçin." },
     time: { title: "Saat", description: "Uygun bir başlangıç saati seçin." },
     customer: { title: "Bilgileriniz", description: "Bu randevu hakkında sizinle nasıl iletişime geçebiliriz?" },
@@ -157,12 +157,12 @@ export const appointmentCopyTr: AppointmentCopy = {
     intro: "Bu web sitesinde bir randevu talep ettiğinizde şunları isteriz:",
     collected: [
       "adınız ve telefon numaranız, isteğe bağlı olarak e-posta adresiniz",
-      "ziyaretin gerçekleşeceği adres ve hizmet bölgesi",
+      "hizmet bölgeniz ve adres veya iletişim bilgileriniz",
       "evcil hayvanınızın adı, türü, ırkı, boyutu ve eklediğiniz notlar",
       "seçtiğiniz hizmet, tarih ve saat ile bize yönelik notlar",
     ],
     purpose:
-      "Bu bilgileri yalnızca bakım ziyaretinizi ayarlamak, onaylamak ve gerçekleştirmek ile bu konuda sizinle iletişime geçmek için kullanırız.",
+      "Bu bilgileri yalnızca bakım randevunuzu ayarlamak, onaylamak ve gerçekleştirmek ile bu konuda sizinle iletişime geçmek için kullanırız.",
     whatsapp:
       "Randevu bilgilerinizi bize WhatsApp üzerinden göndermeyi seçerseniz, bu mesaj WhatsApp'ın kendi koşulları kapsamında işlenir.",
   },

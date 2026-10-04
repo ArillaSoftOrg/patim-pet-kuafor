@@ -14,7 +14,7 @@ const STORAGE_KEYS = [BUSINESS_SYNC_PING_KEY];
 const linkClassName =
   "font-medium text-foreground hover:text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm";
 
-// "https://www.instagram.com/kulapaws.tr/" -> "@kulapaws.tr"
+// "https://www.instagram.com/patimpetkuafor/" -> "@patimpetkuafor"
 function instagramHandle(url: string): string {
   const match = url.match(/instagram\.com\/([^/?]+)/i);
   return match ? `@${match[1]}` : url;

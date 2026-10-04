@@ -5,8 +5,8 @@ import type { ServicesPageContent } from "@/data/servicesPage";
 export const servicesPageTr: ServicesPageContent = {
   header: {
     eyebrow: "Hizmetler",
-    title: "Köpekler ve kediler için bakım hizmetleri",
-    description: "Her KulaPAWS hizmeti, doğrudan evinize gelen mobil ekibimiz aracılığıyla sunulur.",
+    title: "Köpek bakım hizmetleri",
+    description: "Her Patim Pet Kuaför hizmeti, Çukurova, Adana'daki salonumuzda sunulur.",
   },
   cta: {
     heading: "Evcil dostunuz için hangi hizmetin uygun olduğundan emin değil misiniz?",

@@ -3,7 +3,7 @@
 // never by hardcoding a package name into business logic (see
 // src/lib/notifications and src/lib/marketing for what each flag gates).
 // Every flag defaults to false: until a package is actually purchased and
-// configured for a given deployment, KulaPAWS sends no notifications of
+// configured for a given deployment, Patim Pet Kuaför sends no notifications of
 // any kind and collects no marketing consent.
 //
 // NEXT_PUBLIC_-prefixed on purpose — these are plain feature switches, not

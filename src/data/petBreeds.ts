@@ -12,7 +12,7 @@ export interface Breed {
 
 // Common breeds offered as quick picks in the booking flow, plus an
 // "other" entry per pet type. General breed facts only — nothing here is a
-// claim about which breeds Kulapaws does or doesn't groom; that's decided
+// claim about which breeds Patim Pet Kuaför does or doesn't groom; that's decided
 // solely by src/data/appointmentPricing.ts. Breed-specific pricing is an
 // optional override there keyed by these ids, so renaming an id here
 // requires updating any rule that references it.

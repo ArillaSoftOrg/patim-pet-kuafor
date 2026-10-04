@@ -20,7 +20,7 @@ export interface ServiceShowcaseItem {
   // rules apply here the same as everywhere else).
   bullets: string[];
   // Always a fixed /public path (see the `showcase` field comment on
-  // HomepageContent in src/data/homepage.ts) — real KulaPAWS photography
+  // HomepageContent in src/data/homepage.ts) — real Patim Pet Kuaför photography
   // only, cropped to 16:9 ahead of time so it drops in clean.
   image: string;
   imageAlt: string;
@@ -40,7 +40,7 @@ interface ServiceShowcaseProps {
 }
 
 // Premium, image-led presentation of the 5 curated service offerings —
-// custom-built for KulaPAWS: warm cream surface, the existing brand
+// custom-built for Patim Pet Kuaför: warm cream surface, the existing brand
 // palette (primary pink, near-black foreground text — no new colors), and
 // rounded real photography.
 //

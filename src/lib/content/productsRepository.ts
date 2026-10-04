@@ -12,7 +12,7 @@ import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
 // Not real data — a same-origin, cross-tab notification only, same pattern
 // as services/faqsRepository's ping keys. See useLiveContent for how this
 // is used.
-export const PRODUCTS_SYNC_PING_KEY = "kulapaws:sync:products";
+export const PRODUCTS_SYNC_PING_KEY = "patimpet:sync:products";
 
 function notifyOtherTabs() {
   localStorageAdapter.setItem(PRODUCTS_SYNC_PING_KEY, String(Date.now()));

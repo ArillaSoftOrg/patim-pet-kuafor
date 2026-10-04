@@ -7,5 +7,5 @@ export interface ContactPageContent {
 export const contactPageContent: ContactPageContent = {
   title: "Contact us",
   description:
-    "KulaPAWS is a mobile dog and cat grooming service — we come to you, so there's no location to visit. Reach out by phone, WhatsApp, or Instagram.",
+    "Patim Pet Kuaför is a dog grooming salon in Çukurova, Adana. Reach out by phone, WhatsApp, or Instagram, or visit us in person.",
 };

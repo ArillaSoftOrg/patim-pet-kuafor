@@ -306,7 +306,7 @@ begin
     return v_row;
   end if;
 
-  perform pg_advisory_xact_lock(hashtextextended('kulapaws:appointments:phone:' || v_phone_key, 0));
+  perform pg_advisory_xact_lock(hashtextextended('appointments:phone:' || v_phone_key, 0));
 
   -- Re-check after taking the lock: a concurrent duplicate of this very
   -- request may have committed while we waited.

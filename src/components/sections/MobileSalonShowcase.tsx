@@ -41,8 +41,7 @@ function usePrefersReducedMotion(): boolean {
 }
 
 export interface MobileSalonGalleryItem {
-  // Matches a real file in public/mobile-salon/{id}.jpg — see that
-  // directory's source note for where the photos came from.
+  // Matches a real file in public/salon/{id}.jpg.
   id: string;
   alt: string;
   caption: string;
@@ -57,7 +56,7 @@ interface MobileSalonShowcaseProps {
 }
 
 // Real photos only (README §16 / DESIGN.md Imagery rules) — a curated set
-// pulled from actual Kulapaws van and grooming-session footage, not stock
+// pulled from actual Patim Pet Kuaför salon and grooming-session footage, not stock
 // imagery. Below md, a snap-scrolling filmstrip auto-plays as a distinct
 // glide → pause → glide rhythm (see the autoplay loop below) — one card at
 // a time, with the next peeking in — while still accepting native manual
@@ -319,37 +318,21 @@ export function MobileSalonShowcase({
   );
 }
 
-// The first two gallery items (van-exterior-front/side) point at the same
-// bright, enhanced vehicle photography already used in the Hero instead of
-// the older, duller shots in public/mobile-salon/ — see the Hero's own
-// gallery (src/data/homepage.ts hero.gallery) for the same two files. Every
-// other id still resolves to its real public/mobile-salon/{id}.jpg photo.
-const IMAGE_SRC_OVERRIDES: Record<string, string> = {
-  "van-exterior-front": "/hero/hero-van-front.jpg",
-  "van-exterior-side": "/hero/hero-van-side.jpg",
-};
-
 function imageSrcFor(id: string): string {
-  return IMAGE_SRC_OVERRIDES[id] ?? `/mobile-salon/${id}.jpg`;
+  return `/salon/${id}.jpg`;
 }
 
-// Hand-picked per-image object-position so each card's active (wide) and
-// compressed (narrow) crop keeps the van/dog/cat/face in frame instead of
-// drifting to a default center crop. Keyed by MobileSalonGalleryItem.id;
-// falls back to "center" for any id not listed here. The front/side values
-// are tuned for the wide 16:9 Hero photos above (not the old portrait-ish
-// mobile-salon originals) — both are landscape shots with the van's
-// colorful body/logo sitting right-of-center, so the crop is biased there
-// rather than into the sky/gravel at the frame's edges.
+// Hand-picked per-image object-position so each card's crop keeps the
+// signage/face/dog in frame instead of drifting to a default center crop
+// — all three source photos are tall portrait shots (storefront signage
+// sits near the top of exterior.jpg; faces sit in the upper-middle of the
+// two team photos), so a plain center crop would lose the subject in this
+// section's short, wide card aspect. Keyed by MobileSalonGalleryItem.id;
+// falls back to "center" for any id not listed here.
 const IMAGE_FOCAL_POINTS: Record<string, string> = {
-  "van-exterior-front": "68% 56%",
-  "van-exterior-side": "70% 60%",
-  "mobile-groom-dog": "38% 28%",
-  "mobile-groom-pomeranian": "48% 46%",
-  "pomeranian-after-groom": "55% 32%",
-  "groomers-at-work": "66% 24%",
-  "cat-after-groom": "34% 38%",
-  "cat-clipper-groom": "28% 55%",
+  exterior: "50% 20%",
+  "team-faik": "50% 30%",
+  "team-groomer": "50% 25%",
 };
 
 // How wide the active card grows relative to each compressed one, in flex-
@@ -365,7 +348,7 @@ const AUTOPLAY_INTERVAL_MS = 3000;
 
 // Desktop/tablet (md+) presentation — inspired by the "expanding cards"
 // interaction (multiple narrow cards, one active card grows to reveal its
-// caption), adapted to KulaPAWS' 8 real photos and current section width.
+// caption), adapted to Patim Pet Kuaför's 8 real photos and current section width.
 // Pure CSS: each card's flex-grow is the only thing that changes, so the
 // width tween is a single `transition: flex-grow` — no layout library, no
 // JS-driven animation loop for the expand/collapse itself (unlike the

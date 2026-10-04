@@ -33,7 +33,7 @@ export function ProductGrid({
   items,
   limit,
   emptyTitle = "Products are on the way",
-  emptyDescription = "Real KulaPAWS pet-care products will be listed here once confirmed.",
+  emptyDescription = "Real Patim Pet Kuaför pet-care products will be listed here once confirmed.",
   locale = DEFAULT_LOCALE,
   showCategoryFilter = false,
 }: ProductGridProps) {

@@ -5,8 +5,8 @@ import type { ServicesPageContent } from "@/data/servicesPage";
 export const servicesPageRu: ServicesPageContent = {
   header: {
     eyebrow: "Услуги",
-    title: "Услуги груминга для собак и кошек",
-    description: "Все услуги KulaPAWS оказываются с помощью нашей мобильной службы прямо у вас дома.",
+    title: "Услуги груминга для собак",
+    description: "Все услуги Patim Pet Kuaför оказываются в нашем салоне в Чукурова, Адана.",
   },
   cta: {
     heading: "Не уверены, какая услуга подойдёт вашему питомцу?",

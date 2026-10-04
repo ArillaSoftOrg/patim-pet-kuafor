@@ -31,33 +31,30 @@ export interface AboutContent {
 export const aboutContent: AboutContent = {
   header: {
     eyebrow: "About",
-    title: "A pet-care brand built around convenience and care",
+    title: "A dog grooming salon built on real experience",
     description:
-      "KulaPAWS is a mobile grooming service for dogs and cats — we bring grooming, washing, and pet care to you, with no storefront to visit.",
+      "Patim Pet Kuaför is a dog grooming salon in Çukurova, Adana, run by Faik Kopuz, an internationally certified pet groomer.",
   },
   mobileStory: {
-    eyebrow: "Mobile Service",
-    heading: "Why we come to you",
+    eyebrow: "Our Salon",
+    heading: "Visit us in Çukurova, Adana",
     description:
-      "Traditional grooming means a car ride, a waiting room, and an unfamiliar space. KulaPAWS was built around a simpler idea: bring the grooming to your pet's own environment instead.",
-    // Reuses the same real Hero van photo homepage.mobileHighlight.image
-    // already does (see src/data/homepage.ts) — a real, existing, vivid
-    // KulaPAWS asset rather than a new one; a 16:9 shot with the van fully
-    // in frame, which is what FeatureSplit's image slot (aspect="video")
-    // here expects. Still just the *default* — /admin/images' "About Page
-    // Image" slot overrides this the same way it always has.
-    image: "/hero/hero-van-side.jpg",
+      "Bring your dog to our salon for a calm, professional grooming experience — breed-specific trims, model cuts, baths, and full-service care, handled by our certified groomer.",
+    // Real salon exterior photo — see public/salon/exterior.jpg (storefront
+    // signage, Instagram handle @patimpetkuafor visible). Still just the
+    // *default* — /admin/images' "About Page Image" slot overrides this.
+    image: "/salon/exterior.jpg",
   },
   values: {
     heading: "What we care about",
     items: [
-      { title: "Approachable", description: "Friendly, straightforward service without the fuss." },
-      { title: "Caring", description: "Every appointment is centered on your pet's comfort." },
-      { title: "Practical", description: "Convenient, clean, and easy to fit into your routine." },
+      { title: "Certified", description: "Internationally certified grooming, handled with real expertise." },
+      { title: "Caring", description: "Every appointment is centered on your dog's comfort." },
+      { title: "Personal", description: "A real, hands-on salon — not a chain." },
     ],
   },
   cta: {
     heading: "Want to learn more?",
-    description: "Reach out with any questions about KulaPAWS.",
+    description: "Reach out with any questions about Patim Pet Kuaför.",
   },
 };

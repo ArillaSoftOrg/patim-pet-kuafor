@@ -1,28 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fff9f4;
+  /* Warm ivory canvas + the exact dark brown sampled from the real Patim
+     Pet Kuaför wordmark (public/brand/wordmark.png, #3c1704) — not an
+     invented palette. --soft-pink keeps its original token name (used by
+     TestimonialsSection/ChoiceGroup) but now holds a warm cream tone
+     instead of pink, matching this brand's brown/cream identity. */
+  --background: #fdf8f2;
   --surface: #ffffff;
-  --foreground: #292526;
+  --foreground: #2b2016;
 
-  --primary: #a83e68;
-  --primary-hover: #8e3156;
+  --primary: #3c1704;
+  --primary-hover: #582509;
   --primary-foreground: #ffffff;
 
-  --secondary: #dce8d8;
-  --secondary-foreground: #32452f;
+  --secondary: #ead9c2;
+  --secondary-foreground: #4a3420;
 
-  --accent: #f3c28e;
-  --accent-foreground: #4a3420;
+  --accent: #d9a94a;
+  --accent-foreground: #3c1704;
 
-  --soft-pink: #f5d9e2;
+  --soft-pink: #f0e2cc;
 
-  --muted: #f3ece5;
-  --muted-foreground: #6d625e;
+  --muted: #f3ece2;
+  --muted-foreground: #6d5f4f;
 
-  --border: #e6ddd7;
-  --input: #d8cec8;
-  --ring: #a83e68;
+  --border: #e3d5c2;
+  --input: #d6c4ac;
+  --ring: #3c1704;
 
   --success: #527653;
   --warning: #9a6626;

@@ -1,4 +1,4 @@
--- Admin authorization for Kulapaws.
+-- Admin authorization for Patim Pet.
 --
 -- Adds a locked-down admin allow-list (public.admin_users), a reusable
 -- public.is_admin() check, and admin-gated write access (INSERT/UPDATE/

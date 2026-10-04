@@ -21,28 +21,30 @@ export interface Business {
 // file only, once real business facts are confirmed; no page component
 // should need to change to pick up new values here.
 //
-// Kulapaws is a mobile/service-area business — customers never visit a
-// physical location, so `address` correctly stays null rather than
-// inventing one. `tagline`, `email`, and `businessHours` remain
-// unconfirmed and stay null for the same reason. phone/whatsapp/
-// serviceAreas/socialLinks below are real, verified business facts.
+// Patim Pet Kuaför is a physical storefront salon (not a mobile/van
+// service) — customers bring their pet to the shop. All facts below are
+// verified from the business's own Google Business Profile and Instagram
+// (@patimpetkuafor): address, phone/WhatsApp number, and service area are
+// real. `tagline` and `email` are not confirmed anywhere and stay null
+// rather than inventing them. `businessHours` stays null here because the
+// structured per-day hours live in the admin/Supabase content model this
+// field doesn't capture (see Google listing: Mon 09:00–17:00, Tue–Sun
+// 09:00–19:00) — enter them via /admin/business once that UI supports a
+// weekly schedule.
 //
 // This file is the code-level fallback only. The live Supabase `business`
 // row (edited via /admin/business) still needs these same values entered
 // there for them to take effect on a deployed site — updating this file
 // does not change production data (see businessRepository.ts).
 export const business: Business = {
-  name: "KulaPAWS",
+  name: "Patim Pet Kuaför",
   tagline: null,
-  phone: "+90 540 314 62 23",
+  phone: "+90 543 853 93 53",
   email: null,
-  // Temporary number (2026-09-24) — replaces the previous +90 540 314 62 23
-  // pending a permanent line. buildWhatsAppHref strips everything but
-  // digits, so this display format resolves to wa.me/905428408374.
-  whatsapp: "+90 542 840 83 74",
-  address: null,
-  serviceAreas: ["Antalya Merkez", "Kemer", "Kumluca", "Finike", "Demre", "Kaş", "Kalkan", "Fethiye"],
+  whatsapp: "+90 543 853 93 53",
+  address: "Beyazevler, 80001. Sk. Hilmibüyükgenç Apt No: 4/A Zemin Kat, 01000 Çukurova/Adana",
+  serviceAreas: ["Çukurova", "Adana"],
   businessHours: null,
-  socialLinks: [{ platform: "Instagram", url: "https://www.instagram.com/kulapaws.tr/" }],
-  logoSrc: "/brand/logo.jpg",
+  socialLinks: [{ platform: "Instagram", url: "https://www.instagram.com/patimpetkuafor/" }],
+  logoSrc: "/brand/logo.png",
 };

@@ -36,21 +36,21 @@
     "contactUs": "Contact Us",
     "whatsapp": "WhatsApp",
     "whatsappFloating": {
-      "ariaLabel": "Chat with KulaPAWS on WhatsApp (opens in a new tab)",
-      "message": "Hi, I'd like to ask about KulaPAWS services."
+      "ariaLabel": "Chat with Patim Pet Kuaför on WhatsApp (opens in a new tab)",
+      "message": "Hi, I'd like to ask about Patim Pet Kuaför services."
     },
     "whatsappContact": {
-      "message": "Hi, I'd like to get in touch with KulaPAWS."
+      "message": "Hi, I'd like to get in touch with Patim Pet Kuaför."
     },
     "instagramLink": {
-      "ariaLabel": "Follow KulaPAWS on Instagram (opens in a new tab)"
+      "ariaLabel": "Follow Patim Pet Kuaför on Instagram (opens in a new tab)"
     },
     "learnMore": "Learn more →",
     "photoComingSoonTemplate": "{name} photo coming soon",
     "galleryPlaceholderLabel": "Photo coming soon",
     "viewServiceDetails": "View Details",
     "exploreServices": "Explore Our Services",
-    "howMobileGroomingWorks": "How Mobile Grooming Works",
+    "howMobileGroomingWorks": "How It Works",
     "visitFaqPage": "Visit the FAQ page",
     "overview": "Overview",
     "whoItsFor": "Who It's For",
@@ -64,18 +64,18 @@
     "faqEmptyTitle": "FAQs are being finalized",
     "faqEmptyDescription": "Real, confirmed answers will be added here before launch.",
     "productsEmptyTitle": "Products are on the way",
-    "productsEmptyDescription": "Real KulaPAWS pet-care products will be listed here once confirmed.",
+    "productsEmptyDescription": "Real Patim Pet Kuaför pet-care products will be listed here once confirmed.",
     "serviceNotFoundTitle": "Service not found",
     "serviceNotFoundDescription": "This service may have been removed, or the link is incorrect.",
     "productNotFoundTitle": "Product not found",
     "productNotFoundDescription": "This product may have been removed, or the link is incorrect.",
     "servingLabel": "Serving:",
-    "heroImageLabel": "KulaPAWS mobile grooming photo coming soon",
-    "heroImageAlt": "KulaPAWS mobile grooming",
-    "mobileHighlightImageLabel": "Mobile grooming vehicle photo coming soon",
-    "mobileHighlightImageAlt": "KulaPAWS mobile grooming vehicle",
-    "aboutImageLabel": "KulaPAWS team photo coming soon",
-    "aboutImageAlt": "KulaPAWS team",
+    "heroImageLabel": "Patim Pet Kuaför photo coming soon",
+    "heroImageAlt": "Patim Pet Kuaför dog grooming",
+    "mobileHighlightImageLabel": "Salon photo coming soon",
+    "mobileHighlightImageAlt": "Patim Pet Kuaför salon",
+    "aboutImageLabel": "Patim Pet Kuaför photo coming soon",
+    "aboutImageAlt": "Patim Pet Kuaför salon",
     "contactForm": {
       "heading": "Send us a message",
       "unavailableTitle": "Online form coming soon",
@@ -88,11 +88,11 @@
     },
     "faqPage": {
       "title": "Frequently asked questions",
-      "description": "Answers about our services, mobile grooming, and products."
+      "description": "Answers about our services and products."
     },
     "productsPage": {
       "title": "Products",
-      "description": "Discover KulaPAWS products. Browse our curated picks for your pet."
+      "description": "Discover Patim Pet Kuaför products. Browse our curated picks for your dog."
     },
     "productFilter": {
       "all": "All",
@@ -245,8 +245,8 @@
       "sections": {
         "hero": "Hero",
         "servicesSection": "Services Section",
-        "mobileHighlight": "Mobile Service Highlight",
-        "whyKulapaws": "Why Kulapaws",
+        "mobileHighlight": "Salon Highlight",
+        "whyKulapaws": "Why Patim Pet Kuaför",
         "productsPreview": "Products Preview",
         "howItWorks": "How It Works",
         "faqPreview": "FAQ Preview",

@@ -13,107 +13,99 @@ export interface Service {
   image: string | null;
 }
 
-// Category names and routes mirror the approved sitemap (README.md §5).
-// Copy below is intentionally generic/provisional — no specific inclusions,
-// pricing, or process claims until real business content is confirmed.
-// Order matches the homepage's 01-05 ServiceShowcase numbering (see
-// src/data/homepage.ts servicesSection.showcase) — display_order in the
-// Supabase services table should follow the same sequence; see the prepared
-// (not-yet-applied) migration for wash-basic-care/wash-trim-care.
+// Real services, taken directly from Patim Pet Kuaför's Google Business
+// Profile "Hizmetler" (Services) list — dog grooming only; no cat grooming
+// or mobile/house-call service is offered or claimed, since neither is
+// confirmed anywhere in the source material. Copy below stays close to
+// the five listed services; no pricing, inclusions, or process claims
+// beyond what's directly supported by that list and the business's
+// Instagram bio (breed-specific trim, model cut, internationally
+// certified groomer).
 export const services: Service[] = [
   {
-    slug: "wash-basic-care",
-    title: "Wash & Basic Care",
-    shortDescription:
-      "A gentle bath and the essential basics — nail care, ear cleaning, and brushing, brought to your door.",
+    slug: "dog-bath-blow-dry",
+    title: "Dog Bath & Blow-Dry",
+    shortDescription: "A thorough shampoo wash and blow-dry at our salon.",
     overview:
-      "Wash & Basic Care covers what your pet needs on a regular basis: a gentle shampoo bath, thorough brushing, nail trimming, and basic ear hygiene — all done calmly at home through our mobile service.",
+      "A gentle, thorough bath and blow-dry for your dog, done at our salon by Patim Pet Kuaför's groomers.",
     whoItsFor: [
-      "Pets due for a routine wash and basic upkeep",
-      "Owners who want the essentials handled without a full trim",
-      "Regular nail, ear, and coat maintenance between full grooms",
+      "Dogs due for a routine wash",
+      "Owners who want a clean, fresh coat between full grooms",
+      "Any breed and coat type",
     ],
     process: [
-      { title: "Reach out", description: "Tell us about your pet and what basic care they need." },
-      { title: "We come to you", description: "Our mobile grooming setup arrives at your home." },
-      { title: "Wash & basic care", description: "A gentle bath, brushing, nail trim, and ear cleaning, start to finish." },
+      { title: "Drop off", description: "Bring your dog to our salon in Çukurova, Adana." },
+      { title: "Bath & blow-dry", description: "A full shampoo wash and careful blow-dry." },
+      { title: "Pick up", description: "Collect your freshly washed, fluffed dog." },
     ],
-    image: "/services/wash-basic-care.jpg",
-  },
-  {
-    slug: "wash-trim-care",
-    title: "Wash + Trim Care",
-    shortDescription: "A full wash plus a coat-appropriate trim, brushing, and finishing touches.",
-    overview:
-      "Wash + Trim Care builds on the basics with a coat-appropriate trim or clip: a full shampoo wash, brushing, careful trimming, and finishing touches, delivered through our mobile service at home.",
-    whoItsFor: [
-      "Pets ready for a full wash and a fresh trim",
-      "Coats that need regular clipping to stay comfortable",
-      "Owners who want a complete groom without leaving home",
-    ],
-    process: [
-      { title: "Reach out", description: "Tell us about your pet's coat and the trim you're looking for." },
-      { title: "We come to you", description: "Our mobile grooming setup arrives at your home." },
-      { title: "Wash & trim", description: "A full wash, brushing, coat-appropriate trim, and finishing touches." },
-    ],
-    image: "/services/wash-trim-care.jpg",
+    image: "/grooming/spaniel-result.jpg",
   },
   {
     slug: "dog-grooming",
-    title: "Dog Grooming",
-    shortDescription:
-      "Grooming care for dogs of all sizes and coat types, brought to your door.",
+    title: "Dog Grooming & Care",
+    shortDescription: "Breed-specific trims and model cuts, by an internationally certified groomer.",
     overview:
-      "KulaPAWS offers dog grooming designed around your dog's comfort, delivered through our mobile service so there's no crate, no waiting room, and no stressful car ride.",
+      "Full dog grooming and care at our salon — breed-appropriate trims and model cuts, handled by Faik Kopuz, an internationally certified pet groomer.",
     whoItsFor: [
-      "Dogs who get anxious in traditional grooming salons",
-      "Owners who want grooming done without leaving home",
-      "Regular coat, skin, and nail maintenance",
+      "Dogs ready for a full trim or styled cut",
+      "Owners looking for a breed-specific or custom look",
+      "Regular grooming upkeep",
     ],
     process: [
-      { title: "Request a visit", description: "Tell us about your dog and choose a time online." },
-      { title: "We come to you", description: "Our mobile grooming setup arrives at your home." },
-      { title: "Your dog is groomed", description: "A calm, one-on-one grooming session in a familiar setting." },
+      { title: "Drop off", description: "Bring your dog in and tell us the look you're after." },
+      { title: "Grooming", description: "Bath, trim, and styling at our salon." },
+      { title: "Pick up", description: "Collect your freshly groomed dog." },
     ],
-    image: "/services/dog-grooming-card.jpg",
+    image: "/grooming/toy-poodle-grey-result.jpg",
   },
   {
-    slug: "cat-grooming",
-    title: "Cat Grooming",
-    shortDescription:
-      "Low-stress cat grooming at home, without the carrier or the car ride.",
-    overview:
-      "Cats tend to do best in their own environment. KulaPAWS brings cat grooming directly to your home, keeping the experience as calm and low-stress as possible.",
+    slug: "nail-trimming",
+    title: "Nail Trimming",
+    shortDescription: "Careful nail trimming for dogs.",
+    overview: "Nail trimming for dogs, done carefully at our salon as a standalone visit or alongside a groom.",
     whoItsFor: [
-      "Cats who find travel and unfamiliar spaces stressful",
-      "Owners who want grooming without a carrier trip",
-      "Routine coat and hygiene maintenance",
+      "Dogs due for a routine nail trim",
+      "Owners who aren't comfortable trimming nails at home",
     ],
     process: [
-      { title: "Request a visit", description: "Share a few details about your cat and choose a time online." },
-      { title: "We come to you", description: "Our team arrives ready to work in your space." },
-      { title: "Your cat is groomed", description: "A gentle, unhurried session at home." },
+      { title: "Drop off", description: "Bring your dog to our salon." },
+      { title: "Nail trim", description: "A careful, quick trim." },
+      { title: "Pick up", description: "Collect your dog — done." },
     ],
-    image: "/services/cat-grooming-card.jpg",
+    image: "/grooming/shiba-mix-result.jpg",
   },
   {
-    slug: "mobile-pet-grooming",
-    title: "Mobile Pet Grooming",
-    shortDescription:
-      "The convenience of professional grooming, delivered to your driveway.",
-    overview:
-      "Mobile grooming is at the core of what KulaPAWS does: professional pet grooming that comes to you, so your pet is cared for in a familiar, comfortable environment.",
+    slug: "ear-cleaning",
+    title: "Ear Cleaning",
+    shortDescription: "Ear cleaning service for dogs.",
+    overview: "A dedicated ear cleaning service for dogs, done carefully at our salon.",
     whoItsFor: [
-      "Busy schedules that make salon visits difficult",
-      "Pets that do better without travel or waiting areas",
-      "Anyone who prefers one-on-one grooming attention",
+      "Dogs due for routine ear hygiene",
+      "Breeds that need regular ear care",
     ],
     process: [
-      { title: "Book a visit", description: "Request a time that works for you online." },
-      { title: "We arrive", description: "Our mobile grooming service comes directly to your home." },
-      { title: "Pampering happens", description: "Your pet is groomed on-site, start to finish." },
+      { title: "Drop off", description: "Bring your dog to our salon." },
+      { title: "Ear cleaning", description: "A careful, gentle clean." },
+      { title: "Pick up", description: "Collect your dog — done." },
     ],
-    image: "/hero/hero-van-front.jpg",
+    image: "/grooming/pomeranian-mohawk-result.jpg",
+  },
+  {
+    slug: "full-grooming-package",
+    title: "Full Grooming Package",
+    shortDescription: "Patim Pet Kuaför's complete, comprehensive dog care service.",
+    overview:
+      "Our full, comprehensive dog care package — wash, trim, nail care, and ear cleaning together in one visit.",
+    whoItsFor: [
+      "Dogs due for complete, all-in-one care",
+      "Owners who want everything handled in a single visit",
+    ],
+    process: [
+      { title: "Drop off", description: "Bring your dog in for the day." },
+      { title: "Full care", description: "Bath, trim, nail care, and ear cleaning." },
+      { title: "Pick up", description: "Collect your dog, fully groomed." },
+    ],
+    image: "/grooming/chow-chow-portrait.jpg",
   },
 ];
 

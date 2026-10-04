@@ -85,32 +85,13 @@ export function ImagesManager() {
         }}
       />
 
-      {homepage.beforeAfter.gallery.map((item, index) => {
-        // Unlike hero/mobileHighlight/about (whose true "unset" state is
-        // null, rendering a placeholder box), Before/After always shows a
-        // real photo — the packaged public/before-after/{id}.jpg default
-        // when no admin override exists. currentRef falls back to that same
-        // path (not null) so isDefault reads true until an admin actually
-        // uploads something, same as how a fresh Service row's `image`
-        // already equals its own shipped default path.
-        const defaultRef = `/before-after/${item.id}.jpg`;
-        return (
-          <ImageSlotEditor
-            key={item.id}
-            label={t.beforeAfterImageTemplate.replace("{n}", String(index + 1))}
-            currentRef={item.image ?? defaultRef}
-            defaultRef={defaultRef}
-            aspect="square"
-            fit="contain"
-            onChange={async (ref) => {
-              const nextGallery = homepage.beforeAfter.gallery.map((g, i) => (i === index ? { ...g, image: ref } : g));
-              const next = { ...homepage, beforeAfter: { ...homepage.beforeAfter, gallery: nextGallery } };
-              await homepageRepository.set(next);
-              setHomepage(next);
-            }}
-          />
-        );
-      })}
+      {/* Before/after is no longer an admin-editable image gallery: the
+          homepage section (see BeforeAfterSlider.tsx) now holds exactly one
+          real, verified before/after pair as fixed src/alt strings
+          (homepage.beforeAfter.before/.after), not a managed-image-ref
+          gallery an admin can swap photos into. Re-add slot editors here,
+          mirroring the heroImage pattern above, if/when this needs
+          admin-uploadable override support. */}
 
       <ImageSlotEditor
         label={t.aboutImage}
