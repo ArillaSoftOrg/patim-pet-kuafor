@@ -113,7 +113,7 @@ export const homepage: HomepageContent = {
     description:
       "Patim Pet Kuaför is a dog grooming salon in Çukurova, Adana — breed-specific trims, model cuts, and full-service care from an internationally certified groomer.",
     image: null,
-    gallery: ["/hero/bichon-pink-ears.jpg", "/hero/chow-chow-playful.jpg", "/hero/akita-salon.jpg"],
+    gallery: ["/hero/akita-salon.jpg", "/hero/pomeranian-boutique.jpg", "/hero/frenchie-puppy-bed.jpg"],
     primaryCtaLabel: "Request Appointment",
     secondaryCtaLabel: "Explore Services",
   },

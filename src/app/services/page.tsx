@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { buildBreadcrumbList } from "@/lib/seo/jsonLd";
 import { OG_IMAGE, OG_SITE_DEFAULTS, TWITTER_CARD, TWITTER_IMAGE } from "@/lib/seo/socialDefaults";
 
-const TITLE = "Grooming Services for Dogs & Cats";
+const TITLE = "Dog Grooming Services";
 const DESCRIPTION = servicesPageContent.header.description;
 
 export const metadata: Metadata = {

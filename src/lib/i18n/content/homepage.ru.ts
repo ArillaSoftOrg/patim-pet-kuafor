@@ -12,7 +12,7 @@ export const homepageRu: HomepageContent = {
     description:
       "Patim Pet Kuaför — салон груминга собак в Чукурова, Адана: стрижки по породе, модельные стрижки и полный уход от грумера с международной сертификацией.",
     image: null,
-    gallery: ["/hero/bichon-pink-ears.jpg", "/hero/chow-chow-playful.jpg", "/hero/akita-salon.jpg"],
+    gallery: ["/hero/akita-salon.jpg", "/hero/pomeranian-boutique.jpg", "/hero/frenchie-puppy-bed.jpg"],
     primaryCtaLabel: "Записаться на приём",
     secondaryCtaLabel: "Смотреть услуги",
   },

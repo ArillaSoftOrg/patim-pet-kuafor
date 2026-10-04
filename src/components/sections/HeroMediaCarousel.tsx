@@ -55,7 +55,9 @@ function usePrefersReducedMotion(): boolean {
 // globals.css). Advances on a timer only — no pointer/touch handling here,
 // by design: the Hero must never respond to a manual swipe (see the mobile
 // Hero requirements), unlike BeforeAfterShowcase/MobileSalonShowcase below
-// it on the page, which are user-driven.
+// it on the page, which are user-driven. aspect-[4/5] (not the old
+// aspect-video) matches the real gallery photos' native 4:5 portrait ratio
+// — see the matching comment in HeroMedia.tsx for why.
 export function HeroMediaCarousel({ images, alt }: HeroMediaCarouselProps) {
   const count = images.length;
   const isAnimated = count > 1;
@@ -74,7 +76,7 @@ export function HeroMediaCarousel({ images, alt }: HeroMediaCarouselProps) {
   return (
     <div
       {...(isAnimated ? { role: "img", "aria-label": alt } : {})}
-      className="relative mx-auto aspect-video w-full max-w-[560px] overflow-hidden rounded-xl border border-border/70 shadow-[0_24px_48px_-20px_#a83e6847]"
+      className="relative mx-auto aspect-[4/5] w-full max-w-[320px] overflow-hidden rounded-xl border border-border/70 shadow-[0_24px_48px_-20px_#a83e6847] sm:max-w-[380px]"
     >
       {images.map((src, i) => (
         <Image

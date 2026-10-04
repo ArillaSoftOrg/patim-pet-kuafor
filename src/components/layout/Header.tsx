@@ -32,23 +32,27 @@ export function Header() {
     // the header safe-area-aware if that ever changes.
     <header className="sticky top-0 z-40 border-b border-border bg-surface pt-[env(safe-area-inset-top)] lg:static">
       <Container className="flex h-16 items-center justify-between sm:h-20">
-        <Link href={buildLocalizedPath(locale, "/")} className="inline-flex items-center gap-2">
-          {/* Real Patim Pet Kuaför wordmark (public/brand/wordmark.png) — a
-              single combined icon+text lockup, unlike KulaPAWS's separate
-              icon-only logo + text wordmark, so there's no second circular
-              badge image here (that would just repeat this same lockup at
-              a smaller, less legible size). This Image carries the Link's
-              accessible name since it's the only logo element. Intrinsic
-              width/height match the source file's natural aspect ratio;
-              h-full + w-auto scale it to the wrapper's fixed height without
-              ever stretching it. */}
-          <span className="flex h-[32px] flex-shrink-0 items-center sm:h-[40px]">
+        <Link
+          href={buildLocalizedPath(locale, "/")}
+          aria-label={business.name}
+          className="inline-flex flex-shrink-0 items-center"
+        >
+          {/* Patim Pet Kuaför has no standalone vector logo file — the real
+              brand art only exists as the illustrated storefront signage
+              (groomer + dog + cat, the "PATIM PET KUAFÖR" wordmark, and the
+              "Faik Kopuz" / @patimpetkuafor signature), all one combined
+              design. public/brand/logo-full.jpg is a crop of that real
+              signage photo (public/salon/exterior.jpg) — not a separate
+              icon or wordmark asset, just this one full lockup, per the
+              single-combined-logo direction. This Image carries the Link's
+              accessible name since it's the only logo element. */}
+          <span className="flex h-11 flex-shrink-0 items-center overflow-hidden rounded-md sm:h-14">
             <Image
-              src="/brand/wordmark.png"
+              src="/brand/logo-full.jpg"
               alt={business.name}
-              width={2048}
-              height={683}
-              sizes="220px"
+              width={1010}
+              height={380}
+              sizes="280px"
               className="h-full w-auto object-contain"
               preload
             />
