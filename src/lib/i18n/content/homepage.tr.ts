@@ -51,11 +51,11 @@ export const homepageTr: HomepageContent = {
     beforeLabel: "Önce",
     afterLabel: "Sonra",
     before: {
-      src: "/before-after/labradoodle-before.jpg",
+      src: "/before-after/goldendoodle-before.jpg",
       alt: "Patim Pet Kuaför'de bakım randevusu öncesi uzun, şekilsiz kıvırcık tüylü bir köpek",
     },
     after: {
-      src: "/before-after/labradoodle-after.jpg",
+      src: "/before-after/goldendoodle-after.jpg",
       alt: "Aynı köpek, Patim Pet Kuaför'de bakım sonrası düzgün bir teddy bear kesimle",
     },
   },

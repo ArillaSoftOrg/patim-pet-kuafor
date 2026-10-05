@@ -105,15 +105,12 @@ export function HomeContent({
         tone="surface"
       />
 
-      {/* A genuine before/after pair from the SAME Instagram carousel post
-          (3580036553405216578) — same dog, same backdrop, matching
-          face/markings in both frames. The full archive re-scan found no
-          other same-post or caption-confirmed pairs, so this stays a
-          single pair rather than a multi-pair gallery — see
-          src/data/homepage.ts's beforeAfter comment for the full sourcing
-          note. Drag-to-reveal slider, not the old pre-composited-image
-          carousel (BeforeAfterShowcase.tsx), since a real two-photo pair
-          needs two separate images, not one merged graphic. */}
+      {/* A genuine before/after pair supplied as a ready-made studio pair
+          (öncesi.png/sonrası.png — see src/data/homepage.ts's beforeAfter
+          comment for the full sourcing note). Drag-to-reveal slider, not
+          the old pre-composited-image carousel (BeforeAfterShowcase.tsx),
+          since a real two-photo pair needs two separate images, not one
+          merged graphic. */}
       <BeforeAfterSlider
         eyebrow={homepage.beforeAfter.eyebrow}
         heading={homepage.beforeAfter.heading}

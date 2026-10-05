@@ -151,11 +151,9 @@ export const homepage: HomepageContent = {
       },
     ],
   },
-  // Source: the SAME Instagram carousel post (3580036553405216578) — two
-  // photos of the same curly-coated dog against the same marble-tile
-  // backdrop, matching face/markings in both frames. Strongest possible
-  // evidence tier (same post), not a cross-post breed/color match like the
-  // pairing this replaced.
+  // Source: öncesi.png / sonrası.png — a pre-prepared, studio-shot
+  // before/after pair supplied directly for this slider (same dog, same
+  // backdrop and floor, matching face/markings in both frames).
   beforeAfter: {
     eyebrow: "Real Results",
     heading: "Before & After",
@@ -163,11 +161,11 @@ export const homepage: HomepageContent = {
     beforeLabel: "Before",
     afterLabel: "After",
     before: {
-      src: "/before-after/labradoodle-before.jpg",
+      src: "/before-after/goldendoodle-before.jpg",
       alt: "A curly-coated dog with a long, unstyled coat before a grooming appointment at Patim Pet Kuaför",
     },
     after: {
-      src: "/before-after/labradoodle-after.jpg",
+      src: "/before-after/goldendoodle-after.jpg",
       alt: "The same dog with a neatly trimmed teddy-bear cut after grooming at Patim Pet Kuaför",
     },
   },
