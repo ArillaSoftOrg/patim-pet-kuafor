@@ -51,11 +51,11 @@ export const homepageRu: HomepageContent = {
     beforeLabel: "До",
     afterLabel: "После",
     before: {
-      src: "/before-after/labradoodle-before.jpg",
+      src: "/before-after/goldendoodle-before.jpg",
       alt: "Собака с длинной, неухоженной кудрявой шерстью перед грумингом в Patim Pet Kuaför",
     },
     after: {
-      src: "/before-after/labradoodle-after.jpg",
+      src: "/before-after/goldendoodle-after.jpg",
       alt: "Та же собака с аккуратной стрижкой «плюшевый мишка» после груминга в Patim Pet Kuaför",
     },
   },
