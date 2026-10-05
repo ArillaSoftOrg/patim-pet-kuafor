@@ -112,8 +112,15 @@ export const homepage: HomepageContent = {
     heading: "Dog grooming, done right",
     description:
       "Patim Pet Kuaför is a dog grooming salon in Çukurova, Adana — breed-specific trims, model cuts, and full-service care from an internationally certified groomer.",
+    // Rotating 3-image crossfade (see HeroMedia.tsx) — `image` stays null so
+    // `gallery` drives the hero; `image` takes priority over `gallery` in
+    // Hero.tsx and would otherwise pin a single static photo. All three are
+    // real Patim Pet salon photos, each a full, clearly-readable subject at
+    // the same 4:5 crop: Faik smiling with a freshly groomed Pomeranian,
+    // the white Akita standing confidently on the grooming table, and the
+    // styled Pomeranian portrait against the salon's wall art.
     image: null,
-    gallery: ["/hero/akita-salon.jpg", "/hero/pomeranian-boutique.jpg", "/hero/frenchie-puppy-bed.jpg"],
+    gallery: ["/hero/groomer-pomeranian-smile.jpg", "/hero/akita-salon.jpg", "/hero/pomeranian-boutique.jpg"],
     primaryCtaLabel: "Request Appointment",
     secondaryCtaLabel: "Explore Services",
   },

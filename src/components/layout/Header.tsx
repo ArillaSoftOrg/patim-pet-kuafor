@@ -37,22 +37,24 @@ export function Header() {
           aria-label={business.name}
           className="inline-flex flex-shrink-0 items-center"
         >
-          {/* Patim Pet Kuaför has no standalone vector logo file — the real
-              brand art only exists as the illustrated storefront signage
-              (groomer + dog + cat, the "PATIM PET KUAFÖR" wordmark, and the
-              "Faik Kopuz" / @patimpetkuafor signature), all one combined
-              design. public/brand/logo-full.jpg is a crop of that real
-              signage photo (public/salon/exterior.jpg) — not a separate
-              icon or wordmark asset, just this one full lockup, per the
-              single-combined-logo direction. This Image carries the Link's
-              accessible name since it's the only logo element. */}
-          <span className="flex h-11 flex-shrink-0 items-center overflow-hidden rounded-md sm:h-14">
+          {/* The real, clean Patim Pet Kuaför lockup artwork (groomer +
+              dog + cat, the "PATIM PET KUAFÖR" wordmark) — supplied as a
+              standalone graphic, not a photo of the storefront signage like
+              the previous logo-full.jpg crop. public/brand/logo-navbar.png
+              is this same art cropped to just the character + wordmark
+              (the separate "Faik Kopuz" signature line underneath is
+              dropped here since it reads illegibly at navbar height; the
+              full three-part artwork stays available in the source file
+              for other placements that have more vertical room). This
+              Image carries the Link's accessible name since it's the only
+              logo element. */}
+          <span className="flex h-12 flex-shrink-0 items-center sm:h-16">
             <Image
-              src="/brand/logo-full.jpg"
+              src="/brand/logo-navbar.png"
               alt={business.name}
-              width={1010}
-              height={380}
-              sizes="280px"
+              width={979}
+              height={675}
+              sizes="140px"
               className="h-full w-auto object-contain"
               preload
             />

@@ -6,12 +6,12 @@ interface HeroMediaProps {
   alt: string;
 }
 
-const DEFAULT_SIZES = "(min-width: 1024px) 50vw, 100vw";
+const DEFAULT_SIZES = "(min-width: 1280px) 540px, (min-width: 1024px) 460px, 100vw";
 
 // Keeps every layer's fade-in/out perfectly round-robin regardless of count
 // — see the shared hero-media-cycle keyframes in globals.css, which assume
-// a fixed 11.34s loop split evenly across layers (3.78s/image: ~2.88s held
-// at full opacity + a 0.9s crossfade), with each layer's fade-out window
+// a fixed 15.9s loop split evenly across layers (5.3s/image: 4.5s held at
+// full opacity + a 0.8s crossfade), with each layer's fade-out window
 // deliberately overlapping the next layer's fade-in window (see
 // OVERLAP_SECONDS) so the two visibly cross-dissolve — a soft, video-like
 // overlap rather than a hard cut — and the crossfade never dips toward
@@ -23,10 +23,10 @@ const DEFAULT_SIZES = "(min-width: 1024px) 50vw, 100vw";
 // globals.css (they're OVERLAP_SECONDS/CYCLE_SECONDS and
 // (slot+OVERLAP_SECONDS)/CYCLE_SECONDS baked in as static numbers) —
 // changing one without the other breaks the "always one image visible"
-// overlap. Mobile (HeroMediaCarousel.tsx) mirrors the same 3.78s slot /
-// 0.9s crossfade so both variants feel identical in pacing.
-const CYCLE_SECONDS = 11.34;
-const OVERLAP_SECONDS = 0.9;
+// overlap. Mobile (HeroMediaCarousel.tsx) mirrors the same 5.3s slot /
+// 0.8s crossfade so both variants feel identical in pacing.
+const CYCLE_SECONDS = 15.9;
+const OVERLAP_SECONDS = 0.8;
 const PHASE_SHIFT_SECONDS = 1;
 
 function layerDelay(index: number, count: number): string {
@@ -48,17 +48,19 @@ function layerDelay(index: number, count: number): string {
 // below is a no-op crop — the full subject (head to feet) always shows,
 // unlike the previous aspect-video (16:9) box, which kept only ~45% of a
 // 4:5 photo's height and cut off heads/paws depending on framing. Sized
-// by height (not width) so a wide lg:60%-of-container column can't
-// stretch this into an oversized vertical slab — h-[…] + aspect-ratio
-// computes width automatically, and mx-auto centers the result in the
-// grid's media column.
+// by width (w-full up to a max-width cap), not a fixed height — the lg:
+// 60%-of-container media column has real room (~700px+ on a 1360px-wide
+// Container), and a fixed ~384px-wide box left most of that column empty.
+// Letting width fill the column (capped so it doesn't overwhelm the row)
+// and deriving height from aspect-ratio makes the panel the dominant,
+// premium visual it's meant to be instead of looking small and lost.
 export function HeroMedia({ images, alt }: HeroMediaProps) {
   const isAnimated = images.length > 1;
 
   return (
     <div
       {...(isAnimated ? { role: "img", "aria-label": alt } : {})}
-      className="relative mx-auto aspect-[4/5] h-[420px] w-auto max-w-full overflow-hidden rounded-xl border border-border/70 shadow-[0_24px_48px_-20px_#a83e6847] xl:h-[480px]"
+      className="relative mx-auto aspect-[4/5] w-full max-w-[460px] overflow-hidden rounded-xl border border-border/70 shadow-[0_24px_48px_-20px_#a83e6847] xl:max-w-[540px]"
     >
       {images.map((src, index) => (
         <Image

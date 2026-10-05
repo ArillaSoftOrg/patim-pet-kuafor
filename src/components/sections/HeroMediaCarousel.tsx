@@ -11,13 +11,13 @@ interface HeroMediaCarouselProps {
 
 // Same full-cycle length as the desktop crossfade (see HeroMedia.tsx's
 // CYCLE_SECONDS) — one auto-advance per image, split evenly, so both
-// variants take the same 11.34s (3.78s/image) to cycle through the gallery
-// once, and feel identically paced.
-const CYCLE_SECONDS = 11.34;
+// variants take the same 15.9s (5.3s/image: 4.5s held + 0.8s crossfade) to
+// cycle through the gallery once, and feel identically paced.
+const CYCLE_SECONDS = 15.9;
 // How long each crossfade takes — matches HeroMedia.tsx's OVERLAP_SECONDS.
 // Long enough that outgoing/incoming images visibly cross-dissolve rather
 // than cut.
-const CROSSFADE_MS = 900;
+const CROSSFADE_MS = 800;
 // Same smooth ease-in-out as the desktop crossfade (see globals.css's
 // hero-media-cycle) — a snappier ease-out here read as an abrupt cut
 // instead of a continuous, cinematic dissolve.
@@ -76,7 +76,7 @@ export function HeroMediaCarousel({ images, alt }: HeroMediaCarouselProps) {
   return (
     <div
       {...(isAnimated ? { role: "img", "aria-label": alt } : {})}
-      className="relative mx-auto aspect-[4/5] w-full max-w-[320px] overflow-hidden rounded-xl border border-border/70 shadow-[0_24px_48px_-20px_#a83e6847] sm:max-w-[380px]"
+      className="relative mx-auto aspect-[4/5] w-full max-w-[400px] overflow-hidden rounded-xl border border-border/70 shadow-[0_24px_48px_-20px_#a83e6847] sm:max-w-[460px]"
     >
       {images.map((src, i) => (
         <Image
