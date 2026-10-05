@@ -12,7 +12,7 @@ export const homepageTr: HomepageContent = {
     description:
       "Patim Pet Kuaför, Çukurova, Adana'da bir köpek bakım salonudur — ırka özel tıraşlar, model kesimler ve uluslararası sertifikalı bir kuaförden tam kapsamlı bakım.",
     image: null,
-    gallery: ["/hero/akita-salon.jpg", "/hero/pomeranian-boutique.jpg", "/hero/frenchie-puppy-bed.jpg"],
+    gallery: ["/hero/groomer-pomeranian-smile.jpg", "/hero/akita-salon.jpg", "/hero/pomeranian-boutique.jpg"],
     primaryCtaLabel: "Randevu Talep Et",
     secondaryCtaLabel: "Hizmetleri Keşfedin",
   },

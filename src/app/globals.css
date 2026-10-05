@@ -103,32 +103,33 @@ body {
    HeroMedia's layerDelay()) differs, which is what staggers them into a
    round-robin slideshow without JS. Percentages are OVERLAP_SECONDS/
    CYCLE_SECONDS and (slot+OVERLAP_SECONDS)/CYCLE_SECONDS from HeroMedia.tsx
-   (11.34s cycle, 3 images, 0.9s overlap) — keep both in sync.
-   0-7.937%: fade in. 7.937-33.333%: hold, with a slow continuous zoom/pan.
-   33.333-41.270%: fade out. 41.270-100%: hidden, resetting for the next
-   loop. The fade-out window (33.333-41.270%) is deliberately identical to
-   the NEXT layer's fade-in window in real time (see layerDelay's overlap
-   term) — the two ramp concurrently, each fully visible while the other is
-   still fading, so the pair visibly cross-dissolve like a video transition
-   instead of a hard cut, and something is always fully or near-fully
-   opaque, instead of both dipping toward 0 back-to-back (which reads as a
-   washed-out/blank flash). Tuned for a 3-image gallery. A single blanket
-   ease-in-out (see `.hero-media-layer` below) — not per-segment easing —
-   is deliberate: a snappier ease-out on just the fade in/out read as an
-   abrupt cut rather than a continuous, cinematic dissolve. */
+   (15.9s cycle, 3 images, 0.8s overlap) — keep both in sync.
+   0-5.031%: fade in (0.8s). 5.031-33.333%: hold (4.5s), with a slow
+   continuous zoom/pan. 33.333-38.365%: fade out (0.8s). 38.365-100%:
+   hidden, resetting for the next loop. The fade-out window
+   (33.333-38.365%) is deliberately identical to the NEXT layer's fade-in
+   window in real time (see layerDelay's overlap term) — the two ramp
+   concurrently, each fully visible while the other is still fading, so the
+   pair visibly cross-dissolve like a video transition instead of a hard
+   cut, and something is always fully or near-fully opaque, instead of both
+   dipping toward 0 back-to-back (which reads as a washed-out/blank flash).
+   Tuned for a 3-image gallery. A single blanket ease-in-out (see
+   `.hero-media-layer` below) — not per-segment easing — is deliberate: a
+   snappier ease-out on just the fade in/out read as an abrupt cut rather
+   than a continuous, cinematic dissolve. */
 @keyframes hero-media-cycle {
   0% {
     opacity: 0;
     transform: scale(1) translateX(0);
   }
-  7.937% {
+  5.031% {
     opacity: 1;
   }
   33.333% {
     opacity: 1;
     transform: scale(1.07) translateX(-1.2%);
   }
-  41.270% {
+  38.365% {
     opacity: 0;
   }
   100% {
@@ -138,7 +139,7 @@ body {
 }
 
 .hero-media-layer {
-  animation: hero-media-cycle 11.34s ease-in-out infinite;
+  animation: hero-media-cycle 15.9s ease-in-out infinite;
 }
 
 /* The generic reduced-motion rule above only shortens this animation to
